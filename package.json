@@ -4,6 +4,19 @@
     "description": "BATS (Bash Automated Testing System) language support for VSCode.",
     "version": "0.0.1",
     "publisher": "jetmartin",
+    "author": {
+        "name": "J-Et. Martin",
+        "email": "code@jet-martin.com",
+        "url": "http://www.jet-martin.com"
+    },
+    "license": "MIT",
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/jetmartin/bats.git"
+    },
+    "bugs" : {
+        "url" : "https://github.com/jetmartin/bats/issues"
+    },
     "engines": {
         "vscode": "^1.23.0"
     },
@@ -21,6 +34,12 @@
             "language": "bats",
             "scopeName": "source.shell.bats",
             "path": "./syntaxes/bats.tmLanguage"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "bats",
+                "path": "./snippets/snippets.json"
+            }
+        ]
     }
 }

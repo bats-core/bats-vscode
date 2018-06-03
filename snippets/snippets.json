@@ -1,0 +1,38 @@
+{
+    "Bats.Env": {
+      "prefix": "BATS:env",
+      "body": "#!/usr/bin/env bats"
+    },
+    "Bats.Test": {
+      "prefix": "BATS:test",
+      "body": "@test \"${1:test something.}\" {\n    run $2\n}"
+    },
+    "Bats.Line": {
+      "prefix": "BATS:line",
+      "body": "[ \"\\${lines[${1:0}]}\" = \"${2:some value}\" ]"
+    },
+    "Bats.Status": {
+      "prefix": "BATS:status",
+      "body": "[ \"\\$status\" -eq ${1:0} ]"
+    },
+    "Bats.Output": {
+      "prefix": "BATS:output",
+      "body": "[ \"\\$output\" = \"${2:some value}\" ]"
+    },
+    "Bats.Load": {
+      "prefix": "BATS:load",
+      "body": "load ${0:someFile}"
+    },
+    "Bats.Skip": {
+      "prefix": "BATS:skip",
+      "body": "skip"
+    },
+    "Bats.Setup": {
+      "prefix": "BATS:setup",
+      "body": "function setup() {\n    $0\n}"
+    },
+    "Bats.Teardown": {
+      "prefix": "BATS:teardown",
+      "body": "function teardown() {\n    $0\n}"
+    }
+}

@@ -2,7 +2,7 @@
 
 All notable changes to the "bats" extension will be documented in this file.
 
-## [0.0.1] - 2018-06-01
+## [unreleased] - 2018-06-03
 
 - Initial release.
 
