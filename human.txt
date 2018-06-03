@@ -1,0 +1,7 @@
+/* TEAM */
+Your title: Jean-Etienne MARTIN
+Site: http://www.jet-martin.com     
+Twitter: j_et_martin
+Location: Paris, France
+/* THANKS */
+Name: https://github.com/jverdeyen/sublime-bats

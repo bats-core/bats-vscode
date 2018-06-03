@@ -1,0 +1,26 @@
+{
+    "name": "bats",
+    "displayName": "bats",
+    "description": "BATS (Bash Automated Testing System) language support for VSCode.",
+    "version": "0.0.1",
+    "publisher": "jetmartin",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "bats",
+            "aliases": ["Bats", "bats"],
+            "extensions": [".bats"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "bats",
+            "scopeName": "source.shell.bats",
+            "path": "./syntaxes/bats.tmLanguage"
+        }]
+    }
+}
