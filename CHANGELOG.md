@@ -8,6 +8,7 @@ All notable changes to the "bats" extension will be documented in this file.
 
 ### Added
 
+- Add Bats snippets.
 - Language support to VSCode using bats.tmLanguage.
 
 ---
