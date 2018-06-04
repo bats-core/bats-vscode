@@ -23,6 +23,7 @@
     "categories": [
         "Programming Languages"
     ],
+    "icon": "icon.png",
     "contributes": {
         "languages": [{
             "id": "bats",
