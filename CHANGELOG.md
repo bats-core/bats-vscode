@@ -2,6 +2,10 @@
 
 All notable changes to the "bats" extension will be documented in this file.
 
+## [0.1.1] - 2018-06-05
+
+- Fix spellings issue and some fun in Readme.
+
 ## [0.1.0] - 2018-06-04
 
 ### Added

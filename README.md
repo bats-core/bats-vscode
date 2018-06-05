@@ -1,5 +1,8 @@
 # Bats language support for VSCode.
 
+![Current Version](https://vsmarketplacebadge.apphb.com/version/jetmartin.bats.svg)
+![Install Count](https://vsmarketplacebadge.apphb.com/installs-short/jetmartin.bats.svg)
+
 [BATS](https://github.com/sstephenson/bats) (Bash Automated Testing System) language support for [VSCode](https://code.visualstudio.com/).\
 BATS is a test library running in Bash/Shell, created by [@sstephenson](https://github.com/sstephenson).\
 This extension is inspired from [sublime-bats](https://github.com/jverdeyen/sublime-bats).
@@ -48,8 +51,12 @@ MIT
 
 ## Known Issues
 
-No known issues for now, but feel free to repurt issues [here](https://github.com/jetmartin/bats/issues).
+Feel free to report any issues [here](https://github.com/jetmartin/bats/issues).
 
 ## Release Notes
 
 See [change log](https://github.com/jetmartin/bats/blob/master/CHANGELOG.md).
+
+## More
+
+If you like [BATS](https://github.com/sstephenson/bats), you may also like [ShellCheck](https://github.com/koalaman/shellcheck) and the   [vscode-shellcheck extention](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck).
