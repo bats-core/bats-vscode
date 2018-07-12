@@ -2,7 +2,7 @@
 
 All notable changes to the "bats" extension will be documented in this file.
 
-## [0.1.2] - 2018-07-02
+## [0.1.2] - 2018-07-12
 
 - Fixed comments characters for extension.
 
