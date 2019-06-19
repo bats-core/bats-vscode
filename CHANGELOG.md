@@ -4,7 +4,7 @@ All notable changes to the "bats" extension will be documented in this file.
 
 ## [0.1.4] - WIP
 
-- Add some grammar highlight.
+- Add syntax highlight.
 
 ## [0.1.3] - 2018-07-12
 
