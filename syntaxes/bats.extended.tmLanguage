@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>scopeName</key>
+        <string>source.shell.bats.extended</string>
+        <key>injectionSelector</key>
+        <string>L:source.shell.bats -string -comment</string>
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>match</key>
+                <string>@test\b</string>
+                <key>name</key>
+                <string>keyword.control.bats</string>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>\b(run|load|skip)\b</string>
+                <key>name</key>
+                <string>support.function.bats</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
