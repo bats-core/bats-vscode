@@ -4,5 +4,6 @@ Site: http://www.jet-martin.com
 Twitter: j_et_martin
 Location: Paris, France
 /* THANKS */
+Name: Alexander Grund (Flamefire)
 Name: Jack Hayhurst (jakdept)
 Name: https://github.com/jverdeyen/sublime-bats
