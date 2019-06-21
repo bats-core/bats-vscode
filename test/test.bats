@@ -8,12 +8,9 @@
 # bats-core
 #
 # load run skip
-# setup teardown
 # output status lines
 
 load test_helper
-setup() {}
-teardown() {}
 @test 'some test' {
   run foo
   skip echo "${var}"

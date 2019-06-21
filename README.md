@@ -36,7 +36,7 @@ Type BATS:*snippet* to use snippets. See [BATS REAME.md](https://github.com/sste
 See [bats-core](https://github.com/bats-core/bats-core).
 
 * `run`,`load`,`skip`
-* `setup`,`teardown`
+* `output`,`status`,`lines`
 
 ### Bats-support
 
