@@ -8,13 +8,14 @@
 # bats-core
 #
 # load run skip
+# output status lines
 
 load test_helper
 @test 'some test' {
   run foo
-  skip bar
+  skip echo "${var}"
   [ "$status" -eq 0 ]
-  [ "${lines[0]}" = "some value" ]
+  [ "${lines[0]}" = "${some_var}" ]
   [ "${lines[@]}" = 1 ]
   [ "$output" == 'some value' ]
 }

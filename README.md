@@ -51,6 +51,48 @@ See [bats-assert](https://github.com/ztombol/bats-assert).
 * `assert_equal`,`assert_success`,`assert_failure`,`assert_output`,`assert_line`
 * `refute_output`,`refute_line`
 
+## Color customizations
+
+If you want to change bats colors from sh ones, you can do so in user preferences or workspace settings (`.vscode/settings.json`).
+
+Default display :
+
+![Bats overwiew](images/default_colours.png)
+
+Exemple using bellow `.vscode/settings.json` file :
+
+![Bats overwiew](images/custom_colours.png)
+
+```json
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control.bats",
+                "settings": {
+                    "foreground": "#9f1fd1",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "support.function.bats",
+                "settings": {
+                    "foreground": "#d41515",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope": "support.variable.bats",
+                "settings": {
+                    "foreground": "#329432",
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    }
+}
+```
+
 ## Requirements
 
 No specific requirements to use that extension.
