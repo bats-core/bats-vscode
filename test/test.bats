@@ -8,9 +8,12 @@
 # bats-core
 #
 # load run skip
+# setup teardown
 # output status lines
 
 load test_helper
+setup() {}
+teardown() {}
 @test 'some test' {
   run foo
   skip echo "${var}"
@@ -98,4 +101,17 @@ load test_helper
 }
 @test 'some test' {
   run refute false
+}
+
+##
+# bats-mock
+#
+# stub unstub
+
+load helpers/mocks/stub
+setup() {
+  stub function_to_stub "stubbed!" 
+}
+teardown() {
+  unstub function_to_stub
 }

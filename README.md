@@ -2,6 +2,7 @@
 
 ![Current Version](https://vsmarketplacebadge.apphb.com/version/jetmartin.bats.svg)
 ![Install Count](https://vsmarketplacebadge.apphb.com/installs-short/jetmartin.bats.svg)
+![downloads Count](https://vsmarketplacebadge.apphb.com/downloads-short/jetmartin.bats.svg)
 
 [BATS](https://github.com/bats-core/bats-core) (Bash Automated Testing System) language support for [VSCode](https://code.visualstudio.com/).\
 BATS is a test library running in Bash/Shell, created by [@sstephenson](https://github.com/sstephenson).
@@ -12,7 +13,7 @@ BATS is a test library running in Bash/Shell, created by [@sstephenson](https://
 
 The extention will add Bats language support to VSCode.\
 The extention also add Bats Snippets.
-The extention add highlight syntax for [bats-core](https://github.com/bats-core/bats-core), [bats-support](https://github.com/ztombol/bats-support) & [bats-assert](https://github.com/ztombol/bats-assert)
+The extention add highlight syntax for [bats-core](https://github.com/bats-core/bats-core), [bats-support](https://github.com/ztombol/bats-support), [bats-assert](https://github.com/ztombol/bats-assert) & [bats-mock](https://github.com/jasonkarns/bats-mock).
 
 ### Snippets
 
@@ -35,6 +36,7 @@ Type BATS:*snippet* to use snippets. See [BATS REAME.md](https://github.com/sste
 See [bats-core](https://github.com/bats-core/bats-core).
 
 * `run`,`load`,`skip`
+* `setup`,`teardown`
 
 ### Bats-support
 
@@ -50,6 +52,11 @@ See [bats-assert](https://github.com/ztombol/bats-assert).
 * `assert`,`refute`
 * `assert_equal`,`assert_success`,`assert_failure`,`assert_output`,`assert_line`
 * `refute_output`,`refute_line`
+
+### Bats-mock
+See [bats-mock](https://github.com/jasonkarns/bats-mock).
+
+* `stub`,`unstub`
 
 ## Color customizations
 
