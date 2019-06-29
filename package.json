@@ -43,6 +43,16 @@
                 "language": "bats",
                 "scopeName": "source.shell.bats",
                 "path": "./syntaxes/bats.tmLanguage"
+            },
+            {
+                "scopeName": "source.shell.bats.extended",
+                "path": "./syntaxes/bats.extended.tmLanguage",
+                "injectTo": [ "source.shell.bats" ]
+            },
+            {
+                "scopeName": "source.shell.bats.variables",
+                "path": "./syntaxes/bats.variables.tmLanguage",
+                "injectTo": [ "source.shell.bats" ]
             }
         ],
         "snippets": [

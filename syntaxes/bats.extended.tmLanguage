@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>scopeName</key>
+        <string>source.shell.bats.extended</string>
+        <key>injectionSelector</key>
+        <string>L:source.shell.bats -string -comment</string>
+        <key>patterns</key>
+        <array>
+            <dict>
+                <key>match</key>
+                <string>@test\b</string>
+                <key>name</key>
+                <string>keyword.control.bats</string>
+            </dict>
+            <!-- bats -->
+            <dict>
+                <key>match</key>
+                <string>\b(run|load|skip)\b</string>
+                <key>name</key>
+                <string>support.function.bats.builtin</string>
+            </dict>
+            <!-- bats-support -->
+            <dict>
+                <key>match</key>
+                <string>\b(fail|batslib_(err|count_lines|is_single_line|get_max_single_line_key_width|print_kv_single|print_kv_multi|print_kv_single_or_multi|prefix|mark|is_caller|err|decorate))\b</string>
+                <key>name</key>
+                <string>support.function.bats.assertions</string>
+            </dict>
+            <!-- bats-assert -->
+            <dict>
+                <key>match</key>
+                <string>\b(assert|refute|assert_(equal|success|failure|output|line)|refute_(output|line))\b</string>
+                <key>name</key>
+                <string>support.function.bats.assertions</string>
+            </dict>
+            <!-- bats-mock -->
+            <dict>
+                <key>match</key>
+                <string>\b(stub|unstub)\b</string>
+                <key>name</key>
+                <string>support.function.bats.assertions</string>
+            </dict>
+        </array>
+    </dict>
+</plist>
