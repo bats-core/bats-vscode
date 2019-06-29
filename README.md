@@ -54,6 +54,7 @@ See [bats-assert](https://github.com/ztombol/bats-assert).
 * `refute_output`,`refute_line`
 
 ### Bats-mock
+
 See [bats-mock](https://github.com/jasonkarns/bats-mock).
 
 * `stub`,`unstub`
