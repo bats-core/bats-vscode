@@ -1,0 +1,16 @@
+/* TEAM */
+Owner: Jean-Etienne MARTIN
+Site: http://www.jet-martin.com
+Twitter: @j_et_martin
+Location: Paris, France
+
+/* THANKS */
+
+Contributor: Virgil (@virgilwashere)
+Location: Brisbane, Australia
+
+Contributor: Alexander Grund (@Flamefire)
+
+Contributor: Jack Hayhurst (@jakdept)
+
+Inspiration: https://github.com/jverdeyen/sublime-bats
