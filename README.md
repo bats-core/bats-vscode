@@ -1,75 +1,111 @@
-# Bats language support for VSCode
+# BATS (Bash Automated Testing System) for VSCode
 
-![Current Version](https://vsmarketplacebadge.apphb.com/version/jetmartin.bats.svg)
-![Install Count](https://vsmarketplacebadge.apphb.com/installs-short/jetmartin.bats.svg)
-![downloads Count](https://vsmarketplacebadge.apphb.com/downloads-short/jetmartin.bats.svg)
+[![Current Version](https://img.shields.io/visual-studio-marketplace/v/jetmartin.bats.svg?color=emerald&label=Visual%20Studio%20Marketplace&logo=visual-studio-code&logoColor=blue&style=flat)
+![Install Count](https://img.shields.io/visual-studio-marketplace/i/jetmartin.bats.svg?color=emerald&style=flat) 
+![downloads Count](https://img.shields.io/visual-studio-marketplace/d/jetmartin.bats.svg?color=emerald&style=flat)][marketplace]
+ [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jetmartin/bats.svg?color=emerald&label=release&logoColor=white&logo=github&labelColor=grey)][github]
+[![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)][MIT]
 
-[BATS](https://github.com/bats-core/bats-core) (Bash Automated Testing System) language support for [VSCode](https://code.visualstudio.com/).\
-BATS is a test library running in Bash/Shell, created by [@sstephenson](https://github.com/sstephenson).
+This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode].
 
-![Bats overwiew](images/bats.gif)
+## :tada: Features
 
-## Features
+![Bats overview](images/bats.gif)
 
-The extention will add Bats language support to VSCode.\
-The extention also add Bats Snippets.
-The extention add highlight syntax for [bats-core](https://github.com/bats-core/bats-core), [bats-support](https://github.com/ztombol/bats-support), [bats-assert](https://github.com/ztombol/bats-assert) & [bats-mock](https://github.com/jasonkarns/bats-mock).
+- [x] **Bats** language support for VSCode
+- [x] Syntax highlighting for core functions
+- [x] Syntax highlighting for community modules
+- [x] Code Snippets for quick coding for core functions
+- [x] Code Snippets for quick coding for community modules
 
-### Snippets
+[<img alt="Bats logo" align="right" src="icon.png">][Bats]
 
-Type BATS:*snippet* to use snippets. See [BATS REAME.md](https://github.com/sstephenson/bats/blob/master/README.md) for documentation.
+## :bat: Bats
 
-* **BATS:env** : Shebang.
-* **BATS:test** : Test case.
-* **BATS:line** : Test line output.
-* **BATS:status** : Test status code.
-* **BATS:output** : Test output.
-* **BATS:load** : Load common code.
-* **BATS:skip** : Skip test.
-* **BATS:setup** : Setup function.
-* **BATS:teardown** : Teardown function.
+[Bash Automated Testing System (2018)][bats-core] is a [community-maintained][@bats-core] Bats project.
+> :copyright: 2011-2016 [Sam Stephenson][@sstephenson]\
+> :copyright: 2017-2018 [bats-core organization][@bats-core]
 
-## highlight syntax
+Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way to verify that the UNIX programs you write behave as expected.  
 
-### Bats-core
+A **`.bats`** test file is a Bash script with special syntax for defining test cases. Under the hood, each test case is just a function with a description.
 
-See [bats-core](https://github.com/bats-core/bats-core).
+> :information_source: Note\
+> See [bats-core README][bats-readme] for documentation on how to use [Bats].
 
-* `run`,`load`,`skip`
-* `output`,`status`,`lines`
+<!-- next color rebeccapurple, thistle, darkcyan, sandybrown, darkseagreen -->
 
-### Bats-support
+### Bats modules
 
-See [bats-support](https://github.com/ztombol/bats-support).
+Project | version | code snippets | syntax highlighting
+------- | ------- |  ------- | -------
+<https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | :heavy_check_mark: | :heavy_check_mark:
+<https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | :heavy_multiplication_x: | :heavy_check_mark:
+<https://github.com/jasonkarns/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | :heavy_multiplication_x: | :heavy_check_mark:
+<https://github.com/ztombol/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | :heavy_multiplication_x: | :heavy_multiplication_x:
+<https://github.com/lox/bats-mock>            | [![bats-mock project][badge-mock]][bats-mock-l]          | :heavy_multiplication_x: | :heavy_check_mark:
 
-* `fail`
-* `batslib_err`,`batslib_count_lines`,`batslib_is_single_line`,`batslib_get_max_single_line_key_width`,`batslib_print_kv_single`,`batslib_print_kv_multi`,`batslib_print_kv_single_or_multi`,`batslib_prefix`,`batslib_mark`,`batslib_is_caller`,`batslib_err`,`batslib_decorate`
+## :scissors: Snippets
 
-### Bats-assert
+These modules have snippets:
 
-See [bats-assert](https://github.com/ztombol/bats-assert).
+- [x] <https://github.com/bats-core/bats-core>
+- [ ] <https://github.com/jasonkarns/bats-assert-1>
+- [ ] <https://github.com/jasonkarns/bats-support>
+- [ ] <https://github.com/ztombol/bats-file>
+- [ ] <https://github.com/lox/bats-mock>
 
-* `assert`,`refute`
-* `assert_equal`,`assert_success`,`assert_failure`,`assert_output`,`assert_line`
-* `refute_output`,`refute_line`
+Type `BATS:*snippet*` to use snippets.
 
-### Bats-mock
+[![bats-core snippets][badge-core]][bats-core-l]
 
-See [bats-mock](https://github.com/jasonkarns/bats-mock).
+- [x] **BATS:env**      : shebang.
+- [x] **BATS:setup**    : Setup function.
+- [x] **BATS:teardown** : Teardown function.
+- [x] **BATS:load**     : Load common code.
+- [x] **BATS:test**     : Test case.
+- [x] **BATS:status**   : Test status code.
+- [x] **BATS:output**   : Test output.
+- [x] **BATS:line**     : Test line output.
+- [x] **BATS:skip**     : Skip test.
 
-* `stub`,`unstub`
+[![bats-assert snippets][badge-assert]][bats-assert-l]
+:construction:
 
-## Color customizations
+<!-- [![bats-support snippets][badge-support]][bats-support-l]\
+:construction: -->
 
-If you want to change bats colors from sh ones, you can do so in user preferences or workspace settings (`.vscode/settings.json`).
+<!-- [![bats-file snippets][badge-file]][bats-file-l]\
+:construction: -->
 
-Default display :
+<!-- [![bats-mock snippets][badge-mock]][bats-mock-l]\
+:construction: -->
 
-![Bats overwiew](images/default_colours.png)
+## :flashlight: Syntax highlighting
 
-Exemple using bellow `.vscode/settings.json` file :
+These modules have syntax highlighting support:
 
-![Bats overwiew](images/custom_colours.png)
+- [x] <https://github.com/bats-core/bats-core>
+- [x] <https://github.com/jasonkarns/bats-assert-1>
+- [x] <https://github.com/jasonkarns/bats-support>
+- [ ] <https://github.com/ztombol/bats-file>
+- [x] <https://github.com/lox/bats-mock>
+
+<!--  <https://github.com/grayhemp/bats-mock> :thinking: -->
+
+### :art: Color customizations
+
+If you want `Bats` syntax highlighting to look different to `shellscript` syntax, you can change your user preferences or workspace settings (`.vscode/settings.json`).
+
+Default theme, for `shellscript`:
+
+![Bats overview](images/default_colours.png)
+
+Example after saving the `editor.tokenColorCustomizations` settings below.
+
+![Bats overview](images/custom_colours.png)
+
+Add this to your VS Code settings.
 
 ```json
 {
@@ -101,38 +137,80 @@ Exemple using bellow `.vscode/settings.json` file :
 }
 ```
 
-## Requirements
-
-No specific requirements to use that extension.
+[<img alt="Bats logo" align="right" src="icon.png">][Bats]
 
 ## Installation
 
-1. Install Visual Studio Code 1.23.0 or higher
-2. Launch Visual Studio Code
-3. From the command palette *ctrl-shift-p* (Windows, Linux) or *cmd-shift-P* (OSX)
-4. Select Install Extension
-5. Choose extension bats
-6. Reload Visual Studio Code
+### Extension Marketplace
 
-## Extension Settings
+This extension is published in the [VSCode marketplace][marketplace].
 
-That extension do not add any VS Code settings.
+ 1. Run [Install Extensions] from the [Command Palette]
+ 1. Search and choose  [**`bats`**][marketplace].
 
-## Licence
+### Release Notes
 
-MIT
+See [Changelog].
 
-## Known Issues
+### :heavy_exclamation_mark: Known Issues
 
-Feel free to report any issues [here](https://github.com/jetmartin/bats/issues).
+[![GitHub issues](https://img.shields.io/github/issues/jetmartin/bats.svg?color=tomato)][issues]
 
-## Release Notes
+Feel free to report any [issues].
 
-See [change log](https://github.com/jetmartin/bats/blob/master/CHANGELOG.md).
+## Related Projects
 
-## More
+If you like [Bats], you may also like [ShellCheck][shellcheck] and the [VSCode extension][vscode-shellcheck]
 
-[Bats-core](https://github.com/bats-core/bats-core) (2017-*) is former [BATS](https://github.com/sstephenson/bats) (2011-2016).
-This extension has been inspired by [sublime-bats](https://github.com/jverdeyen/sublime-bats).
+This extension was inspired by [sublime-bats].
 
-If you like [BATS](https://github.com/sstephenson/bats), you may also like [ShellCheck](https://github.com/koalaman/shellcheck) and the   [vscode-shellcheck extention](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck).
+## :scroll: License
+
+[<img alt="humans.txt" align="right" src="images/humanstxt-isolated-blank.gif">][humanstxt]
+
+[MIT]
+
+
+<!-- Links -->
+
+[Bats]: <https://github.com/bats-core/bats-core>
+[sBats]: <https://github.com/sstephenson/bats>
+[@sstephenson]: <https://github.com/sstephenson>
+[@bats-core]: <https://github.com/bats-core>
+[TAP]: <https://testanything.org/>
+[Bash]: <https://www.gnu.org/software/bash/>
+[bats-readme]: <https://github.com/bats-core/bats-core/blob/master/README.md>
+[marketplace]: <https://marketplace.visualstudio.com/items?itemName=jetmartin.bats>
+[github]: <https://github.com/jetmartin/bats>
+[issues]: <https://github.com/jetmartin/bats/issues>
+[Changelog]: <https://github.com/jetmartin/bats/blob/master/CHANGELOG.md>
+[MIT]: <https://github.com/jetmartin/bats/blob/master/LICENSE>
+[humanstxt]: <https://github.com/jetmartin/bats/blob/master/humans.txt>
+
+[bats-core]: <https://github.com/bats-core/bats-core>
+[bats-assert]: <https://github.com/jasonkarns/bats-assert-1>
+[bats-support]: <https://github.com/jasonkarns/bats-support>
+[bats-file]: <https://github.com/ztombol/bats-file>
+[bats-mock]: <https://github.com/lox/bats-mock>
+[grayhemp-mock]: <https://github.com/grayhemp/bats-mock>
+
+[bats-core-l]: <https://github.com/bats-core/bats-core/releases/latest>
+[bats-assert-l]: <https://github.com/jasonkarns/bats-assert-1/releases/latest>
+[bats-support-l]: <https://github.com/jasonkarns/bats-support/releases/latest>
+[bats-file-l]: <https://github.com/ztombol/bats-file/releases/latest>
+[bats-mock-l]: <https://github.com/lox/bats-mock/releases/latest>
+
+[badge-core]: <https://img.shields.io/github/release/bats-core/bats-core.svg?style=flat-square&labelColor=olivedrab&color=grey&label=bats-core>
+[badge-assert]: <https://img.shields.io/github/package-json/v/jasonkarns/bats-assert-1.svg?label=bats-assert&style=flat-square&labelColor=royalblue&color=grey>
+[badge-support]: <https://img.shields.io/github/package-json/v/jasonkarns/bats-support.svg?style=flat-square&color=grey&labelColor=sienna&label=bats-support>
+[badge-file]: <https://img.shields.io/github/package-json/v/ztombol/bats-file.svg?style=flat-square&color=grey&labelColor=indianred&label=bats-file>
+[badge-mock]: <https://img.shields.io/github/release/lox/bats-mock.svg?style=flat-square&color=grey&labelColor=orchid&label=bats-mock>
+
+[command palette]: <https://code.visualstudio.com/Docs/editor/codebasics#_command-palette>
+[install extensions]: <https://code.visualstudio.com/docs/editor/extension-gallery#_install-an-extension>
+[Visual Studio Code]: <https://code.visualstudio.com/>
+[vscode]: <https://code.visualstudio.com/>
+[shellcheck]: <https://shellcheck.net/>
+[vscode-shellcheck]: <https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck>
+[sublime-bats]: <https://github.com/jverdeyen/sublime-bats>
+

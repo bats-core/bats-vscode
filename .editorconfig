@@ -1,0 +1,61 @@
+; EditorConfig helps developers define and maintain consistent
+; coding styles between different editors and IDEs.
+
+; For more visit http://editorconfig.org.
+root = true
+
+; Choose between lf or rf on "end_of_line" property
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{sh,bash,bats}]
+indent_size = 2
+indent_style = space
+
+# Markdown
+[*.md]
+indent_size = 4
+trim_trailing_whitespace = false
+
+[*.{js,css,scss}]
+indent_size = 4
+
+[*.{html,htm}]
+indent_style = tab
+indent_size = 4
+
+# PHP Coding style - https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md
+[*.php]
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = false
+
+# Use 4 spaces for the Python files
+[*.py]
+indent_size = 4
+max_line_length = 80
+
+# The JSON files contain newlines inconsistently
+[*.json]
+insert_final_newline = ignore
+indent_size = 2
+
+# Minified JavaScript files shouldn't be changed
+[**.min.js]
+indent_style = ignore
+insert_final_newline = ignore
+
+# Makefiles always use tabs for indentation
+[Makefile]
+indent_style = tab
+
+# Batch files use tabs for indentation
+[*.bat]
+indent_style = tab
+end_of_line = crlf

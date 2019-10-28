@@ -1,0 +1,11 @@
+{
+    "default": true,
+    "no-duplicate-header": {
+        "siblings_only": true
+    },
+    "MD013": {
+        "line_length": 160
+    },
+    "no-inline-html": false,
+    "no-bare-urls": false
+}
