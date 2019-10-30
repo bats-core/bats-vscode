@@ -8,7 +8,7 @@
 
 This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode].
 
-## :tada: Features
+## ![tada][_tada] Features
 
 ![Bats overview](images/bats.gif)
 
@@ -20,17 +20,17 @@ This extension adds language support for the [Bats] (Bash Automated Testing Syst
 
 [<img alt="Bats logo" align="right" src="icon.png">][Bats]
 
-## :bat: Bats
+## ![bat][_bat] Bats
 
 [Bash Automated Testing System (2018)][bats-core] is a [community-maintained][@bats-core] Bats project.
-> :copyright: 2011-2016 [Sam Stephenson][@sstephenson]\
-> :copyright: 2017-2018 [bats-core organization][@bats-core]
+> ![copyright][_copyright] 2011-2016 [Sam Stephenson][@sstephenson]\
+> ![copyright][_copyright] 2017-2018 [bats-core organization][@bats-core]
 
 Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way to verify that the UNIX programs you write behave as expected.  
 
 A **`.bats`** test file is a Bash script with special syntax for defining test cases. Under the hood, each test case is just a function with a description.
 
-> :information_source: Note\
+> ![Note][_information_source]
 > See [bats-core README][bats-readme] for documentation on how to use [Bats].
 
 <!-- next color rebeccapurple, thistle, darkcyan, sandybrown, darkseagreen -->
@@ -39,13 +39,13 @@ A **`.bats`** test file is a Bash script with special syntax for defining test c
 
 Project | version | code snippets | syntax highlighting
 ------- | ------- |  ------- | -------
-<https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | :heavy_check_mark: | :heavy_check_mark:
-<https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | :heavy_check_mark: | :heavy_check_mark:
-<https://github.com/jasonkarns/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | :heavy_multiplication_x: | :heavy_check_mark:
-<https://github.com/ztombol/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | :heavy_multiplication_x: | :heavy_multiplication_x:
-<https://github.com/lox/bats-mock>            | [![bats-mock project][badge-mock]][bats-mock-l]          | :heavy_multiplication_x: | :heavy_check_mark:
+<https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | ![Y][_white_check_mark] | ![Y][_white_check_mark]
+<https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | ![Y][_white_check_mark] | ![Y][_white_check_mark]
+<https://github.com/jasonkarns/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
+<https://github.com/ztombol/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | ![N][_negative_squared_cross_mark] | ![N][_negative_squared_cross_mark]
+<https://github.com/lox/bats-mock>            | [![bats-mock project][badge-mock]][bats-mock-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
 
-## :scissors: Snippets
+## ![scissors][_scissors] Snippets
 
 These modules have snippets:
 
@@ -82,15 +82,15 @@ Type `BATS:*snippet*` to use snippets.
 - [x] **BATS:refute_line**
 
 <!-- [![bats-support snippets][badge-support]][bats-support-l]\
-:construction: -->
+![construction][_construction] -->
 
 <!-- [![bats-file snippets][badge-file]][bats-file-l]\
-:construction: -->
+![construction][_construction] -->
 
 <!-- [![bats-mock snippets][badge-mock]][bats-mock-l]\
-:construction: -->
+![construction][_construction] -->
 
-## :flashlight: Syntax highlighting
+## ![flashlight][_flashlight] Syntax highlighting
 
 These modules have syntax highlighting support:
 
@@ -102,7 +102,7 @@ These modules have syntax highlighting support:
 
 <!--  <https://github.com/grayhemp/bats-mock> :thinking: -->
 
-### :art: Color customizations
+### ![art][_art] Color customizations
 
 If you want `Bats` syntax highlighting to look different to `shellscript` syntax, you can change your user preferences or workspace settings (`.vscode/settings.json`).
 
@@ -161,7 +161,7 @@ This extension is published in the [VSCode marketplace][marketplace].
 
 See [Changelog].
 
-### :heavy_exclamation_mark: Known Issues
+### ![exclamation][_exclamation] Known Issues
 
 [![GitHub issues](https://img.shields.io/github/issues/jetmartin/bats.svg?color=tomato)][issues]
 
@@ -173,7 +173,7 @@ If you like [Bats], you may also like [ShellCheck][shellcheck] and the [VSCode e
 
 This extension was inspired by [sublime-bats].
 
-## :scroll: License
+## ![scroll][_scroll] License
 
 [<img alt="humans.txt" align="right" src="images/humanstxt-isolated-blank.gif">][humanstxt]
 
@@ -221,3 +221,16 @@ This extension was inspired by [sublime-bats].
 [shellcheck]: <https://shellcheck.net/>
 [vscode-shellcheck]: <https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck>
 [sublime-bats]: <https://github.com/jverdeyen/sublime-bats>
+
+[_art]: <images/_art.png>
+[_bat]: <images/_bat.png>
+[_construction]: <images/_construction.png>
+[_copyright]: <images/_copyright.png>
+[_exclamation]: <images/_exclamation.png>
+[_flashlight]: <images/_flashlight.png>
+[_information_source]: <images/_information_source.png>
+[_negative_squared_cross_mark]: <images/_negative_squared_cross_mark.png>
+[_scissors]: <images/_scissors.png>
+[_scroll]: <images/_scroll.png>
+[_tada]: <images/_tada.png>
+[_white_check_mark]: <images/_white_check_mark.png>
