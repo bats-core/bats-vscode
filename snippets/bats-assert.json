@@ -1,0 +1,478 @@
+{
+    // https://snippet-generator.app
+    //
+    // https://github.com/jasonkarns/bats-assert-1/
+    //
+    // Output
+    //
+    // If output is not longer than one line, it is displayed in two-column format.
+    // If $output is longer than one line, it is displayed in multi-line format.
+    //
+    // Regex anchors
+    //
+    // assert/refute_output regex functions
+    // Note: the anchors ^ and $ bind to the beginning and the end
+    //       of the __entire output__ (not individual lines), respectively.
+    //
+    // assert/refute_line regex functions
+    // Note: the anchors ^ and $ bind to the beginning and the end
+    //       of the matched line, respectively.
+    //
+    // Options
+    // For functions that have options, --disables option parsing for the
+    // remaining arguments to allow using arguments identical to one of the
+    // allowed options.
+    //
+    //      assert_output--'-p'
+    //
+    // Specifying--as an argument is similarly simple.
+    //
+    // refute_line--'--'
+    //
+    // Warning: Due to a bug in Bats, empty lines are discarded from ${lines[@]}, causing line indices to change and preventing testing for empty lines.
+    // - <https://github.com/sstephenson/bats/pull/93>
+
+    "@test assert": {
+        "prefix": "BATS:assert <expression>",
+        "body": [
+            "# Note: The expression must be a simple command.",
+            "# Compound commands, such as `[[`, can be used only when executed with `run bash -c \"commands\"`",
+            "@test '${1:describe test for assert()}' {",
+            "\t$0${2:command ${4:touch '/var/log/test.log'}}",
+            "\tassert [ ${2:expression ${3:-e '/var/log/test.log'}} ]\n",
+            "\t# On failure, the failed expression is displayed.",
+            "\t# -- assertion failed --",
+            "\t# expression : [ -e '/var/log/test.log' ]",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert: Fail if the given expression evaluates to false."
+    },
+    "@test refute: Fail if the given expression evaluates to true.": {
+        "prefix": "BATS:refute",
+        "body": [
+            "# Note: The expression must be a simple command.",
+            "# Compound commands, such as `[[`, can be used only when executed with `run bash -c \"commands\"`",
+            "@test '${1:description refute()}' {",
+            "\t$0${3:command rm -f '/var/log/test.log'}",
+            "\trefute [ ${2:expression -e '/var/log/test.log'} ]\n",
+            "\t# On failure, the successful expression is displayed.",
+            "\t# -- assertion succeeded, but it was expected to fail --",
+            "\t# expression : [ -e /var/log/test.log ]",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test refute: Fail if the given expression evaluates to true."
+    },
+    "@test assert_success: Fail if $status is not 0.": {
+        "prefix": "BATS:assert_success",
+        "body": [
+            "@test '${1:assert_success() \\$status only}' {",
+            "\t$0${3:run bash -c \"echo 'Error!';exit 23\"}",
+            "\tassert_success\n",
+            "\t# On failure, \\$status and \\$output are displayed.",
+            "\t# -- command failed --",
+            "\t# status : 23",
+            "\t# output : Error!",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_success: Fail if $status is not 0."
+    },
+    "@test assert_equal: Fail if the two parameters, actual and expected value respectively, do not equal.": {
+        "prefix": "BATS:assert_equal <actual> <expected>",
+        "body": [
+            "@test '${1:describe test for assert_equal()}' {",
+            "\tassert_equal '${2:have}' '${3:want}'\n",
+            "\t# On failure, the expected and actual values are displayed.",
+            "\t# -- values do not equal --",
+            "\t# expected : want",
+            "\t# actual   : have",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_equal: Fail if the actual and expected values are not equal."
+    },
+
+    "@test assert_failure (status): Fail if $status is 0.": {
+        "prefix": "BATS:assert_failure",
+        "body": [
+            "@test '${1:description assert_failure() status only}' {",
+            "\t$0${3:run echo 'Success!'}",
+            "\tassert_failure\n",
+            "\t# On failure, \\$output is displayed.",
+            "\t# -- command succeeded, but it was expected to fail --",
+            "\t# output : Success!",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_failure (status): Fail if $status is 0."
+    },
+    "@test assert_failure (expected): When one parameter is specified, fail if $status does not equal the expected status specified by the parameter.": {
+        "prefix": "BATS:assert_failure (expected)",
+        "body": [
+            "@test '${1:description assert_failure() with expected status}' {",
+            "\t$0${3:run bash -c \"echo 'Error!'; exit 32\"}",
+            "\tassert_failure 2\n",
+            "\t# On failure, the expected and actual status, and \\$output are displayed.",
+            "\t# -- command failed as expected, but status differs --",
+            "\t# expected : 2",
+            "\t# actual   : 32",
+            "\t# output   : Error!",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_failure (expected): When one parameter is specified, fail if $status does not equal the expected status specified by the parameter."
+    },
+    "@test assert_output (default): Verify the specified expected output matches the actual output.": {
+        "prefix": "BATS:assert_output (default)",
+        "body": [
+            "@test '${1:assert_output() literal check for ${3:want}}' {",
+            "\t$0${2:run echo 'have'}",
+            "\tassert_output '${3:want}'\n",
+            "\t# On failure, the expected and actual output are displayed.",
+            "\t# -- output differs --",
+            "\t# expected : want",
+            "\t# actual   : have",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_output (default): This function helps to verify that a command or function produces the correct output by checking that the specified expected output matches the actual output. Matching can be literal (default), partial or regular expression. This function is the logical complement of refute_output."
+    },
+    "@test assert_output (exists): To assert that any (non-empty) output exists at all, simply omit the matching argument.": {
+        "prefix": "BATS:assert_output (exists)",
+        "body": [
+            "@test '${1:assert_output() check for existence}' {",
+            "\t$0${2:run echo 'have'}",
+            "\tassert_output\n",
+            "\t# On failure, an error message is displayed.",
+            "\t# -- no output --",
+            "\t# expected non-empty output, but output was empty",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_output (existence): To assert that any (non-empty) output exists at all, simply omit the matching argument."
+    },
+    "@test assert_output (partial): The assertion fails if the expected substring is not found in $output.": {
+        "prefix": [
+            "BATS:assert_output (partial)",
+            "BATS:assert_output (substring)",
+        ],
+        "body": [
+            "@test '${1:assert_output() partial matching}' {",
+            "\t$0${3:run echo 'ERROR: no such file or directory'}",
+            "\tassert_output --partial '${2:SUCCESS}'\n",
+            "\t# On failure, the substring and the output are displayed.",
+            "\t# -- output does not contain substring --",
+            "\t# substring : SUCCESS",
+            "\t# output    : ERROR: no such file or directory",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_output (partial): The assertion fails if the expected substring is not found in $output. Partial matching can be enabled with the --partial option (-p for short). Partial matching and regular expression matching (--regexp or -e) are mutually exclusive. An error is displayed when used simultaneously."
+    },
+    "@test assert_output (regexp): The assertion fails if the extended regular expression does not match $output": {
+        "prefix": "BATS:assert_output (regexp)",
+        "body": [
+            "# Note: The anchors ^ and \\$ bind to the beginning and the end of the entire output (not individual lines), respectively.",
+            "@test '${1:assert_output() regular expression matching}' {",
+            "\t$0${3:run echo 'Foobar 0.1.0'}",
+            "\tassert_output --regexp '${2:^Foobar v[0-9]+\\.[0-9]+\\.[0-9]\\$}'\n",
+            "\t# On failure, the regular expression and the output are displayed.",
+            "\t# -- regular expression does not match output --",
+            "\t# regexp : ^Foobar v[0-9]+\\.[0-9]+\\.[0-9]\\$",
+            "\t# output : Foobar 0.1.0",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_output (regexp): The assertion fails if the extended regular expression does not match $output. Regular expression matching can be enabled with the --regexp option (-e for short). Regular expression matching and partial matching (--partial or -p) are mutually exclusive. An error is displayed when used simultaneously."
+    },
+    "@test assert_output (stdin): The expected output can be specified via standard input with the -/--stdin option": {
+        "prefix": "BATS:assert_output (stdin)",
+        "body": [
+            "@test '${1:assert_output() stdin with pipe}' {",
+            "\t$0${3:run ${2:echo 'hello'}}",
+            "\t${2:echo 'hello'} | assert_output -\n",
+            "\t# On failure, the expected and actual output are displayed.",
+            "}\n\n"
+        ],
+        "description": "@test assert_output (stdin): The expected output can be specified via standard input with the -/--stdin option"
+    },
+    "@test assert_output (herestring): The expected output can be specified via herestring with the -/--stdin option": {
+        "prefix": "BATS:assert_output (herestring)",
+        "body": [
+            "@test '${1:assert_output() with herestring}' {",
+            "\t$0${3:run echo} '${2:herestring hello}'",
+            "\tassert_output - <<< ${2:herestring hello}\n",
+            "\t# On failure, the expected and actual output are displayed.",
+            "}\n\n"
+        ],
+        "description": "@test assert_output (herestring): The expected output can be specified via herestring with the -/--stdin option"
+    },
+    "@test assert_output (heredoc): The expected output can be specified via heredoc with the -/--stdin option": {
+        "prefix": "BATS:assert_output (heredoc)",
+        "body": [
+            "@test '${1:assert_output() with heredoc}' {",
+            "\t$0${3:run printf '\\t\\t%s\\n'} '${2:heredoc minim non nulla cillum exercitation anim cupidatat}'",
+            "\tassert_output <<- EOF",
+            "\t\t${2:heredoc minim non nulla cillum exercitation anim cupidatat}",
+            "EOF\n",
+            "\t# On failure, the expected and actual output are displayed.",
+            "}\n\n"
+        ],
+        "description": "@test assert_output (heredoc): The expected output can be specified via heredoc with the -/--stdin option"
+    },
+    "@test refute_output (default): The assertion fails if $output equals the unexpected output.": {
+        "prefix": "BATS:refute_output (default)",
+        "body": [
+            "@test '${1:refute_output()}' {",
+            "\t$0${3:run echo '${2:want}'}",
+            "\trefute_output '${2:want}'\n",
+            "\t# On failure, the output is displayed.",
+            "\t# -- output equals, but it was expected to differ --",
+            "\t# output : want",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test refute_output (default): This function helps to verify that a command or function produces the correct output by checking that the specified unexpected output does not match the actual output. Matching can be literal (default), partial or regular expression. This function is the logical complement of assert_output.",
+    },
+    "@test refute_output (exists): To assert that there is no output at all, simply omit the matching argument.": {
+        "prefix": "BATS:refute_output (exists)",
+        "body": [
+            "@test '${1:refute_output() check for existence}' {",
+            "\t$0${3:run foo --silent}",
+            "\trefute_output\n",
+            "\t# On failure, an error message is displayed.",
+            "\t# -- unexpected output --",
+            "\t# expected no output, but output was non-empty",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test refute_output (exists): To assert that there is no output at all, simply omit the matching argument.",
+    },
+    "@test refute_output (partial): The assertion fails if the unexpected substring is found in $output": {
+        "prefix": [
+            "BATS:refute_output (partial)",
+            "BATS:refute_output (substring)",
+        ],
+        "body": [
+            "@test '${1:refute_output() partial matching}' {",
+            "\t$0${3:run echo 'ERROR: no such file or directory'}",
+            "\trefute_output --partial '${2:ERROR}'\n",
+            "\t# On failure, the substring and the \\$output are displayed.",
+            "\t# -- output should not contain substring --",
+            "\t# substring : ERROR",
+            "\t# output    : ERROR: no such file or directory",
+            "\t# --",
+            "}\n\n",
+        ],
+        "description": "@test refute_output (partial): The assertion fails if the unexpected substring is found in $output. Partial matching can be enabled with the --partial option (-p for short). Partial matching and regular expression matching (--regexp or -e) are mutually exclusive. An error is displayed when used simultaneously.",
+    },
+    "@test refute_output (regexp): The assertion fails if the extended regular expression matches $output": {
+        "prefix": "BATS:refute_output (regexp)",
+        "body": [
+            "# Note: The anchors ^ and \\$ bind to the beginning and the end of the entire output (not individual lines), respectively.",
+            "@test '${1:refute_output() regular expression matching}' {",
+            "\t$0${3:run echo 'Foobar 0.1.0'}",
+            "\trefute_output --regexp '${2:^Foobar v[0-9]+\\.[0-9]+\\.[0-9]\\$}'\n",
+            "\t# On failure, the regular expression and the output are displayed.",
+            "\t# -- regular expression should not match \\$output --",
+            "\t# regexp : ^Foobar v[0-9]+\\.[0-9]+\\.[0-9]\\$",
+            "\t# output : Foobar 0.1.0",
+            "\t# --",
+            "}\n\n",
+        ],
+        "description": "@test refute_output (regexp): The assertion fails if the extended regular expression matches $output. Regular expression matching can be enabled with the --regexp option (-e for short). Regular expression matching and partial matching (--partial or -p) are mutually exclusive. An error is displayed when used simultaneously.",
+    },
+    "@test refute_output (stdin): The expected output can be specified via standard input with the -/--stdin option": {
+        "prefix": "BATS:refute_output (stdin)",
+        "body": [
+            "@test '${1:refute_output() stdin with pipe}' {",
+            "\t${2:run echo 'hello'}",
+            "\t${3:echo 'world'} | refute_output -\n",
+            "\t# On failure, the expected and actual output are displayed.",
+            "}\n\n",
+        ],
+        "description": "@test refute_output (stdin): The expected output can be specified via standard input with the -/--stdin option",
+    },
+    "@test refute_output (herestring): The expected output can be specified via herestring with the -/--stdin option": {
+        "prefix": "BATS:refute_output (herestring)",
+        "body": [
+            "@test '${1:refute_output() with herestring}' {",
+            "\t${2:run echo 'hello'}",
+            "\trefute_output - <<< ${2:herestring world}\n",
+            "\t# On failure, the expected and actual output are displayed.",
+            "}\n\n",
+        ],
+        "description": "@test refute_output (herestring): The expected output can be specified via herestring with the -/--stdin option",
+    },
+    "@test refute_output (heredoc): The expected output can be specified via heredoc with the -/--stdin option": {
+        "prefix": "BATS:refute_output (heredoc)",
+        "body": [
+            "@test '${1:refute_output() with heredoc}' {",
+            "\t${3:run printf '\\t\\t%s\\n'} '${2:heredoc minim non nulla cillum exercitation anim cupidatat}'",
+            "\trefute_output <<- EOF",
+            "\t\t${2:heredoc minim non nulla cillum exercitation anim cupidatat}",
+            "EOF\n",
+            "\t# On failure, the expected and actual output are displayed.",
+            "}\n\n",
+        ],
+        "description": "@test refute_output (heredoc): The expected output can be specified via heredoc with the -/--stdin option",
+    },
+    "@test assert_line (exists): The assertion fails if the expected line is not found in ${lines[@]}.": {
+        "prefix": "BATS:assert_line (exists)",
+        "body": [
+            "@test '${1:assert_line() looking for line}' {",
+            "\t$0${3:run echo \\$'have-0\\nhave-1\\nhave-2'}",
+            "\tassert_line '${2:want}'\n",
+            "\t# On failure, the expected line and the \\$output are displayed.",
+            "\t# Warning: Due to a bug in Bats, empty lines are discarded from \\${lines[@]}, causing line indices to change and preventing testing for empty lines.\n",
+            "\t# -- output does not contain line --",
+            "\t# line : want",
+            "\t# output (3 lines):",
+            "\t#   have-0",
+            "\t#   have-1",
+            "\t#   have-2",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_line (exists): The assertion fails if the expected line is not found in ${lines[@]}."
+    },
+    "@test assert_line (index): The assertion fails if the expected line does not equal ${lines[<idx>]}.": {
+        "prefix": "BATS:assert_line (index)",
+        "body": [
+            "@test '${1:assert_line() match specific line}' {",
+            "\t$0${3:run echo \\$'have-0\\nhave-1\\nhave-2'}",
+            "\tassert_line --index 1 '${2:want-1}'\n",
+            "\t# On failure, the index and the compared lines are displayed.",
+            "\t# -- line differs --",
+            "\t# index    : 1",
+            "\t# expected : want-1",
+            "\t# actual   : have-1",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": [
+            "@test assert_line (index): The assertion fails if the expected line does not equal ${lines[<idx>]}.",
+            "When the --index <idx> option is used (-n <idx> for short), the expected",
+            "line is matched only against the line identified by the given index.",
+        ],
+    },
+    "@test assert_line (partial): The assertion fails if the expected substring is not found in the matched line.": {
+        "prefix": [
+            "BATS:assert_line (partial)",
+            "BATS:assert_line (substring)",
+        ],
+        "body": [
+            "@test '${1:assert_line() partial matching}' {",
+            "\t$0${3:run echo \\$'have 1\\nhave 2\\nhave 3'}",
+            "\tassert_line --partial '${2:want}'\n",
+            "\t# Warning: Due to a bug in Bats, empty lines are discarded from \\${lines[@]}, causing line indices to change and preventing testing for empty lines.\n",
+            "\t# On failure, the same details are displayed as for literal matching, except that the substring replaces the expected line.",
+            "\t# -- no output line contains substring --",
+            "\t# substring : want",
+            "\t# output (3 lines):",
+            "\t#   have 1",
+            "\t#   have 2",
+            "\t#   have 3",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_line (partial): The assertion fails if the expected substring is not found in the matched line. Partial matching can be enabled with the --partial option (-p for short). This option and regular expression matching (--regexp or -e) are mutually exclusive. An error is displayed when used simultaneously."
+    },
+    "@test assert_line (regexp): The assertion fails if the extended regular expression does not match the line being tested.": {
+        "prefix": "BATS:assert_line (regexp)",
+        "body": [
+            "# Note: As expected, the anchors ^ and $ bind to the beginning and the end of the matched line, respectively.",
+            "@test '${1:assert_line() regular expression matching}' {",
+            "\t$0${3:run echo \\$'have-0\\nhave-1\\nhave-2'}",
+            "\tassert_line --index 1 --regexp '${2:^want-[0-9]\\$}'\n",
+            "\t# Warning: Due to a bug in Bats, empty lines are discarded from \\${lines[@]}, causing line indices to change and preventing testing for empty lines.\n",
+            "\t# On failure, the same details are displayed as for literal matching, except that the regular expression replaces the expected line.",
+            "\t# -- regular expression does not match line --",
+            "\t# index  : 1",
+            "\t# regexp : ^want-[0-9]$",
+            "\t# line   : have-1",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_line (regexp): The assertion fails if the extended regular expression does not match the line being tested. Regular expression matching can be enabled with the --regexp option (-e for short). This option and partial matching (--partial or -p) are mutually exclusive. An error is displayed when used simultaneously."
+    },
+    "@test refute_line (default): The assertion fails if the unexpected line is found in ${lines[@]}.": {
+        "prefix": "BATS:refute_line (default)",
+        "body": [
+            "@test '${1:refute_line() looking for line}' {",
+            "\t$0${3:run echo \\$'have-0\\nwant\\nhave-2'}",
+            "\trefute_line '${2:want}'\n",
+            "\t# Warning: Due to a bug in Bats, empty lines are discarded from \\${lines[@]}, causing line indices to change and preventing testing for empty lines.\n",
+            "\t# On failure, the unexpected line, the index of its first match and the \\$output with the matching line highlighted are displayed.",
+            "\t# -- line should not be in output --",
+            "\t# line  : want",
+            "\t# index : 1",
+            "\t# output (3 lines):",
+            "\t#   have-0",
+            "\t# > want",
+            "\t#   have-2",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test refute_line (default): Similarly to refute_output, this function helps to verify that a command or function produces the correct output. It checks that the unexpected line does not appear in the output (default) or in a specific line of it. Matching can be literal (default), partial or regular expression. This function is the logical complement of assert_line."
+    },
+    "@test refute_line (specific):  The assertion fails if the unexpected line equals ${lines[<idx>]}": {
+        "prefix": "BATS:refute_line (specific)",
+        "body": [
+            "@test '${1:refute_line() specific line}' {",
+            "\t$0${3:run echo \\$'have-0\\nwant-1\\nhave-2'}",
+            "\trefute_line --index 1 '${2:want-1}'\n",
+            "\t# Warning: Due to a bug in Bats, empty lines are discarded from \\${lines[@]}, causing line indices to change and preventing testing for empty lines.\n",
+            "\t# On failure, the index and the unexpected line are displayed.",
+            "\t# -- line should differ --",
+            "\t# index : 1",
+            "\t# line  : want-1",
+            "\t# --",
+            "}\n\n",
+        ],
+        "description": "@test refute_line (specific): When the --index <idx> option is used (-n <idx> for short), the unexpected line is matched only against the line identified by the given index. The assertion fails if the unexpected line equals ${lines[<idx>]}."
+    },
+    "@test refute_line (partial):  The assertion fails if the unexpected substring is found in the matched line.": {
+        "prefix": [
+            "BATS:refute_line (partial)",
+            "BATS:refute_line (substring)",
+        ],
+        "body": [
+            "@test '${1:refute_line() partial matching}' {",
+            "\t$0${3:run echo \\$'have 1\\nwant 2\\nhave 3'}",
+            "\trefute_line --partial '${2:want}'\n",
+            "\t# Warning: Due to a bug in Bats, empty lines are discarded from \\${lines[@]}, causing line indices to change and preventing testing for empty lines.\n",
+            "\t# On failure, in addition to the details of literal matching, the substring is also displayed. When used with --index <idx> the substring replaces the unexpected line.",
+            "\t# -- no line should contain substring --",
+            "\t# substring : want",
+            "\t# index     : 1",
+            "\t# output (3 lines):",
+            "\t#   have 1",
+            "\t# > want 2",
+            "\t#   have 3",
+            "\t# --",
+            "}\n\n",
+        ],
+        "description": "@test refute_line (partial):  The assertion fails if the unexpected substring is found in the matched line. Partial matching can be enabled with the --partial option (-p for short). This option and regular expression matching (--regexp or -e) are mutually exclusive. An error is displayed when used simultaneously."
+    },
+    "@test refute_line (regexp): The assertion fails if the extended regular expression matches the line being tested.": {
+        "prefix": "BATS:refute_line (regexp)",
+        "body": [
+            "# Note: As expected, the anchors ^ and $ bind to the beginning and the end of the matched line, respectively.",
+            "\t$0${3:run echo \\$'Foobar v0.1.0\\nRelease date: 2015-11-29'}",
+            "\trefute_line --index 0 --regexp '${2:^Foobar v[0-9]+\\.[0-9]+\\.[0-9]\\$}'\n",
+            "\t# Warning: Due to a bug in Bats, empty lines are discarded from \\${lines[@]}, causing line indices to change and preventing testing for empty lines.\n",
+            "\t# On failure, in addition to the details of literal matching, the regular expression is also displayed. When used with --index <idx> the regular expression replaces the unexpected line.",
+            "\t# -- regular expression should not match line --",
+            "\t# index  : 0",
+            "\t# regexp : ^Foobar v[0-9]+\\.[0-9]+\\.[0-9]\\$",
+            "\t# line   : Foobar v0.1.0",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test refute_line (regexp): The assertion fails if the extended regular expression matches the line being tested. Regular expression matching can be enabled with the --regexp option (-e for short). This option and partial matching (--partial or -p) are mutually exclusive. An error is displayed when used simultaneously."
+    },
+}
+

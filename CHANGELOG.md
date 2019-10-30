@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Added
+
+- [x] :sparkles: Add snippets for `bats-assert` community module
+- [x] :busts_in_silhouette: Add [Virgil (virgilwashere)](https://github.com/virgilwashere) as a [contributor]
+
 ### Changed
 
 [<img alt="humans.txt" align="right" src="images/humanstxt-isolated-blank.gif">][contributor]
@@ -74,4 +79,3 @@ All notable changes to this project will be documented in this file.
 [0.1.2]: <https://github.com/jetmartin/bats/compare/v0.1.1...v0.1.2>
 [0.1.1]: <https://github.com/jetmartin/bats/compare/v0.1.0...v0.1.1>
 [0.1.0]: <https://github.com/jetmartin/bats/compare/v0.0.1...v0.1.0>
-
