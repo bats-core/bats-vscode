@@ -23,8 +23,8 @@ This extension adds language support for the [Bats] (Bash Automated Testing Syst
 ## ![bat][_bat] Bats
 
 [Bash Automated Testing System (2018)][bats-core] is a [community-maintained][@bats-core] Bats project.
-> ![copyright][_copyright] 2011-2016 [Sam Stephenson][@sstephenson]\
-> ![copyright][_copyright] 2017-2018 [bats-core organization][@bats-core]
+> (c)2011-2016 [Sam Stephenson][@sstephenson]\
+> (c)2017-2018 [bats-core organization][@bats-core]
 
 Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way to verify that the UNIX programs you write behave as expected.  
 
@@ -38,7 +38,7 @@ A **`.bats`** test file is a Bash script with special syntax for defining test c
 ### Bats modules
 
 Project | version | code snippets | syntax highlighting
-------- | ------- |  ------- | -------
+ :--- | ---: |  :---: | :---:
 <https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | ![Y][_white_check_mark] | ![Y][_white_check_mark]
 <https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | ![Y][_white_check_mark] | ![Y][_white_check_mark]
 <https://github.com/jasonkarns/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
@@ -161,7 +161,7 @@ This extension is published in the [VSCode marketplace][marketplace].
 
 See [Changelog].
 
-### ![exclamation][_exclamation] Known Issues
+### ![exclamation][_exclamation]Known Issues
 
 [![GitHub issues](https://img.shields.io/github/issues/jetmartin/bats.svg?color=tomato)][issues]
 
