@@ -23,8 +23,8 @@ This extension adds language support for the [Bats] (Bash Automated Testing Syst
 ## ![bat][_bat] Bats
 
 [Bash Automated Testing System (2018)][bats-core] is a [community-maintained][@bats-core] Bats project.
-> (c)2011-2016 [Sam Stephenson][@sstephenson]\
-> (c)2017-2018 [bats-core organization][@bats-core]
+> (c) 2011-2016 [Sam Stephenson][@sstephenson]\
+> (c) 2017-2018 [bats-core organization][@bats-core]
 
 Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way to verify that the UNIX programs you write behave as expected.  
 
