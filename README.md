@@ -193,7 +193,7 @@ This extension was inspired by [sublime-bats].
 [issues]: <https://github.com/jetmartin/bats/issues>
 [new issue]: <https://github.com/jetmartin/bats/issues/new>
 [Changelog]: <https://github.com/jetmartin/bats/blob/master/CHANGELOG.md>
-[MIT]: <https://github.com/jetmartin/bats/blob/master/LICENSE>
+[MIT]: <https://jet-martin.mit-license.org/2017>
 [humanstxt]: <https://github.com/jetmartin/bats/blob/master/humans.txt>
 
 [bats-core]: <https://github.com/bats-core/bats-core>
