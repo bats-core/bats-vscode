@@ -40,7 +40,7 @@ A **`.bats`** test file is a Bash script with special syntax for defining test c
 Project | version | code snippets | syntax highlighting
 ------- | ------- |  ------- | -------
 <https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | :heavy_check_mark: | :heavy_check_mark:
-<https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | :heavy_multiplication_x: | :heavy_check_mark:
+<https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | :heavy_check_mark: | :heavy_check_mark:
 <https://github.com/jasonkarns/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | :heavy_multiplication_x: | :heavy_check_mark:
 <https://github.com/ztombol/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | :heavy_multiplication_x: | :heavy_multiplication_x:
 <https://github.com/lox/bats-mock>            | [![bats-mock project][badge-mock]][bats-mock-l]          | :heavy_multiplication_x: | :heavy_check_mark:
@@ -50,7 +50,7 @@ Project | version | code snippets | syntax highlighting
 These modules have snippets:
 
 - [x] <https://github.com/bats-core/bats-core>
-- [ ] <https://github.com/jasonkarns/bats-assert-1>
+- [x] <https://github.com/jasonkarns/bats-assert-1>
 - [ ] <https://github.com/jasonkarns/bats-support>
 - [ ] <https://github.com/ztombol/bats-file>
 - [ ] <https://github.com/lox/bats-mock>
@@ -70,7 +70,16 @@ Type `BATS:*snippet*` to use snippets.
 - [x] **BATS:skip**     : Skip test.
 
 [![bats-assert snippets][badge-assert]][bats-assert-l]
-:construction:
+
+- [x] **BATS:assert**
+- [x] **BATS:assert_output**
+- [x] **BATS:assert_line**
+- [x] **BATS:assert_success**
+- [x] **BATS:assert_failure**
+- [x] **BATS:assert_equal**
+- [x] **BATS:refute**
+- [x] **BATS:refute_output**
+- [x] **BATS:refute_line**
 
 <!-- [![bats-support snippets][badge-support]][bats-support-l]\
 :construction: -->
@@ -170,7 +179,6 @@ This extension was inspired by [sublime-bats].
 
 [MIT]
 
-
 <!-- Links -->
 
 [Bats]: <https://github.com/bats-core/bats-core>
@@ -213,4 +221,3 @@ This extension was inspired by [sublime-bats].
 [shellcheck]: <https://shellcheck.net/>
 [vscode-shellcheck]: <https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck>
 [sublime-bats]: <https://github.com/jverdeyen/sublime-bats>
-

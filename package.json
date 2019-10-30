@@ -59,6 +59,10 @@
             {
                 "language": "bats",
                 "path": "./snippets/snippets.json"
+            },
+            {
+                "language": "bats",
+                "path": "./snippets/bats-assert.json"
             }
         ]
     }
