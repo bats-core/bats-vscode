@@ -30,7 +30,7 @@ Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way t
 
 A **`.bats`** test file is a Bash script with special syntax for defining test cases. Under the hood, each test case is just a function with a description.
 
-> ![Note][_information_source]
+> ![Note][_information_source] \
 > See [bats-core README][bats-readme] for documentation on how to use [Bats].
 
 <!-- next color rebeccapurple, thistle, darkcyan, sandybrown, darkseagreen -->
