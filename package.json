@@ -1,7 +1,7 @@
 {
     "name": "bats",
-    "displayName": "bats",
-    "description": "BATS (Bash Automated Testing System) language support for VSCode.",
+    "displayName": "Bats (Bash Automated Testing System)",
+    "description": "Bats (Bash Automated Testing System) language support for VSCode.",
     "version": "0.1.4",
     "publisher": "jetmartin",
     "author": {
@@ -29,7 +29,9 @@
             {
                 "id": "bats",
                 "aliases": [
+                    "Bats (Bash Automated Testing System)",
                     "Bats",
+                    "BATS",
                     "bats"
                 ],
                 "extensions": [
@@ -58,7 +60,7 @@
         "snippets": [
             {
                 "language": "bats",
-                "path": "./snippets/snippets.json"
+                "path": "./snippets/bats.json"
             },
             {
                 "language": "bats",
