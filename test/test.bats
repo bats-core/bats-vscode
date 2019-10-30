@@ -23,10 +23,10 @@ load test_helper
 ##
 # bats-support
 #
-# batslib_err batslib_count_lines batslib_is_single_line 
+# batslib_err batslib_count_lines batslib_is_single_line
 # batslib_get_max_single_line_key_width batslib_print_kv_single
-# batslib_print_kv_multi batslib_print_kv_single_or_multi 
-# batslib_prefix batslib_mark batslib_decorate 
+# batslib_print_kv_multi batslib_print_kv_single_or_multi
+# batslib_prefix batslib_mark batslib_decorate
 # fail
 
 @test 'some test' {
@@ -107,7 +107,7 @@ load test_helper
 
 load helpers/mocks/stub
 setup() {
-  stub function_to_stub "stubbed!" 
+  stub function_to_stub "stubbed!"
 }
 teardown() {
   unstub function_to_stub
