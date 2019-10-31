@@ -15,7 +15,7 @@ All notable changes to this project will be documented in this file.
 
 [<img alt="humans.txt" align="right" src="images/humanstxt-isolated-blank.gif">][contributor]
 
-- [x] ![shirt][_shirt] docs: Linting Markdown files
+- [x] ![rotating_light][_rotating_light] docs: Linting Markdown files
 - [x] ![memo][_memo] docs: Update Bats repo to [bats-core] in [README]
 - [x] ![bug][_bug] docs: rename `humans.txt` and add logo
 - [x] ![memo][_memo] docs: Refactor [Changelog]
@@ -83,15 +83,15 @@ All notable changes to this project will be documented in this file.
 [0.1.1]: <https://github.com/jetmartin/bats/compare/v0.1.0...v0.1.1>
 [0.1.0]: <https://github.com/jetmartin/bats/compare/v0.0.1...v0.1.0>
 
-[_bento_]: <images/_bento_.png>
+[_bento]: <images/_bento.png>
 [_bookmark]: <images/_bookmark.png>
 [_busts_in_silhouette]: <images/_busts_in_silhouette.png>
-[_bug_]: <images/_bug_.png>
+[_bug]: <images/_bug.png>
 [_children_crossing]: <images/_children_crossing.png>
 [_fire]: <images/_fire.png>
 [_memo]: <images/_memo.png>
 [_pencil2]: <images/_pencil2.png>
 [_page_facing_up]: <images/_page_facing_up.png>
-[_shirt]: <images/_shirt.png>
+[_rotating_light]: <images/_rotating_light.png>
 [_sparkles]: <images/_sparkles.png>
 [_tada]: <images/_tada.png>
