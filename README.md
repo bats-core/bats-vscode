@@ -18,7 +18,7 @@ This extension adds language support for the [Bats] (Bash Automated Testing Syst
 - [x] Code Snippets for quick coding for core functions
 - [x] Code Snippets for quick coding for community modules
 
-[<img alt="Bats logo" align="right" src="icon.png">][Bats]
+[<img alt="Bats logo" align="right" src="images/icon.png">][Bats]
 
 ## ![bat][_bat] Bats
 
@@ -26,7 +26,7 @@ This extension adds language support for the [Bats] (Bash Automated Testing Syst
 > (c) 2011-2016 [Sam Stephenson][@sstephenson]\
 > (c) 2017-2018 [bats-core organization][@bats-core]
 
-Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way to verify that the UNIX programs you write behave as expected.  
+Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way to verify that the UNIX programs you write behave as expected.
 
 A **`.bats`** test file is a Bash script with special syntax for defining test cases. Under the hood, each test case is just a function with a description.
 
@@ -146,7 +146,7 @@ Add this to your VS Code settings.
 }
 ```
 
-[<img alt="Bats logo" align="right" src="icon.png">][Bats]
+[<img alt="Bats logo" align="right" src="images/icon.png">][Bats]
 
 ## Installation
 
@@ -165,7 +165,7 @@ See [Changelog].
 
 [![GitHub issues](https://img.shields.io/github/issues/jetmartin/bats.svg?color=tomato)][issues]
 
-Feel free to report any [issues].
+Feel free to report any [issues][new issue].
 
 ## Related Projects
 
@@ -191,8 +191,9 @@ This extension was inspired by [sublime-bats].
 [marketplace]: <https://marketplace.visualstudio.com/items?itemName=jetmartin.bats>
 [github]: <https://github.com/jetmartin/bats>
 [issues]: <https://github.com/jetmartin/bats/issues>
+[new issue]: <https://github.com/jetmartin/bats/issues/new>
 [Changelog]: <https://github.com/jetmartin/bats/blob/master/CHANGELOG.md>
-[MIT]: <https://github.com/jetmartin/bats/blob/master/LICENSE>
+[MIT]: <https://jet-martin.mit-license.org/2017>
 [humanstxt]: <https://github.com/jetmartin/bats/blob/master/humans.txt>
 
 [bats-core]: <https://github.com/bats-core/bats-core>

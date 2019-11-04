@@ -23,7 +23,7 @@
     "categories": [
         "Programming Languages"
     ],
-    "icon": "icon.png",
+    "icon": "./images/icon.png",
     "contributes": {
         "languages": [
             {
