@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.7] - 2019-11-04
+
+- [x] ![bug][_bug] docs: Remove release on CDN urls due to vsce packaging issue
+
 ## [0.1.6] - 2019-11-04
 
 - [x] ![memo][_memo] docs: move icon to images direct
@@ -89,15 +93,15 @@ All notable changes to this project will be documented in this file.
 [0.1.1]: <https://github.com/jetmartin/bats/compare/v0.1.0...v0.1.1>
 [0.1.0]: <https://github.com/jetmartin/bats/compare/v0.0.1...v0.1.0>
 
-[_bento]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_bento.png>
-[_bookmark]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_bookmark.png>
-[_busts_in_silhouette]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_busts_in_silhouette.png>
-[_bug]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_bug.png>
-[_children_crossing]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_children_crossing.png>
-[_fire]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_fire.png>
-[_memo]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_memo.png>
-[_pencil2]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_pencil2.png>
-[_page_facing_up]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_page_facing_up.png>
-[_rotating_light]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_rotating_light.png>
-[_sparkles]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_sparkles.png>
-[_tada]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_tada.png>
+[_bento]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_bento.png>
+[_bookmark]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_bookmark.png>
+[_busts_in_silhouette]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_busts_in_silhouette.png>
+[_bug]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_bug.png>
+[_children_crossing]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_children_crossing.png>
+[_fire]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_fire.png>
+[_memo]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_memo.png>
+[_pencil2]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_pencil2.png>
+[_page_facing_up]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_page_facing_up.png>
+[_rotating_light]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_rotating_light.png>
+[_sparkles]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_sparkles.png>
+[_tada]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_tada.png>
