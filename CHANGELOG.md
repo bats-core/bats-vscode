@@ -10,6 +10,7 @@ All notable changes to this project will be documented in this file.
 
 - [x] :sparkles: Add snippets for `bats-assert` community module
 - [x] :busts_in_silhouette: Add [Virgil (virgilwashere)](https://github.com/virgilwashere) as a [contributor]
+- [x] :truck: docs: move icon to images directory
 
 ### Changed
 
@@ -53,7 +54,7 @@ All notable changes to this project will be documented in this file.
 
 ## [0.1.0] - 2018-06-04
 
-<img alt="Bats logo" align="right" src="icon.png">
+<img alt="Bats logo" align="right" src="images/icon.png">
 
 ### Added
 
