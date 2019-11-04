@@ -223,15 +223,15 @@ This extension was inspired by [sublime-bats].
 [vscode-shellcheck]: <https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck>
 [sublime-bats]: <https://github.com/jverdeyen/sublime-bats>
 
-[_art]: <images/_art.png>
-[_bat]: <images/_bat.png>
-[_construction]: <images/_construction.png>
-[_copyright]: <images/_copyright.png>
-[_exclamation]: <images/_exclamation.png>
-[_flashlight]: <images/_flashlight.png>
-[_information_source]: <images/_information_source.png>
-[_negative_squared_cross_mark]: <images/_negative_squared_cross_mark.png>
-[_scissors]: <images/_scissors.png>
-[_scroll]: <images/_scroll.png>
-[_tada]: <images/_tada.png>
-[_white_check_mark]: <images/_white_check_mark.png>
+[_art]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_art.png>
+[_bat]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_bat.png>
+[_construction]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_construction.png>
+[_copyright]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_copyright.png>
+[_exclamation]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_exclamation.png>
+[_flashlight]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_flashlight.png>
+[_information_source]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_information_source.png>
+[_negative_squared_cross_mark]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_negative_squared_cross_mark.png>
+[_scissors]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_scissors.png>
+[_scroll]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_scroll.png>
+[_tada]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_tada.png>
+[_white_check_mark]: <https://cdn.jsdelivr.net/gh/jetmartin/bats@0.1.6/images/_white_check_mark.png>
