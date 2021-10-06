@@ -109,12 +109,6 @@ load test_helper
 }
 
 ##
-# bats-assert
-#
-# assert assert_equal assert_success assert_failure assert_output
-# refute_output assert_line refute_line refute
-
-##
 # bats-mock
 #
 # stub unstub
