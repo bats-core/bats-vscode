@@ -1,5 +1,13 @@
 #!/usr/bin/env bats
 
+setup_file() {
+  :
+}
+
+teardown_file() {
+  :
+}
+
 ##
 # Simple test file for syntax coloration check on VSCode.
 #
@@ -99,6 +107,12 @@ load test_helper
 @test 'some test' {
   run refute false
 }
+
+##
+# bats-assert
+#
+# assert assert_equal assert_success assert_failure assert_output
+# refute_output assert_line refute_line refute
 
 ##
 # bats-mock
