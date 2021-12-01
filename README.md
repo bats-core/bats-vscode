@@ -42,7 +42,7 @@ Project | version | code snippets | syntax highlighting
 <https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | ![Y][_white_check_mark] | ![Y][_white_check_mark]
 <https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | ![Y][_white_check_mark] | ![Y][_white_check_mark]
 <https://github.com/jasonkarns/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
-<https://github.com/ztombol/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | ![N][_negative_squared_cross_mark] | ![N][_negative_squared_cross_mark]
+<https://github.com/ztombol/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
 <https://github.com/lox/bats-mock>            | [![bats-mock project][badge-mock]][bats-mock-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
 
 ## ![scissors][_scissors] Snippets
