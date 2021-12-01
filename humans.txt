@@ -13,4 +13,6 @@ Contributor: Alexander Grund (@Flamefire)
 
 Contributor: Jack Hayhurst (@jakdept)
 
+Contributor: Edwin Kofler (@hyperupcall)
+
 Inspiration: https://github.com/jverdeyen/sublime-bats
