@@ -10,13 +10,13 @@
         <array>
             <dict>
                 <key>match</key>
-                <string>\$(output|status|lines)\b</string>
+                <string>\$(output|status|lines|stderr|stderr_lines)\b</string>
                 <key>name</key>
                 <string>support.variable.bats</string>
             </dict>
             <dict>
                 <key>match</key>
-                <string>\$\{#?(output|status|lines)\b</string>
+                <string>\$\{#?(output|status|lines|stderr|stderr_lines)\b</string>
                 <key>captures</key>
                 <dict>
                     <key>1</key>

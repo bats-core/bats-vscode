@@ -1,5 +1,13 @@
 #!/usr/bin/env bats
 
+setup_file() {
+  :
+}
+
+teardown_file() {
+  :
+}
+
 ##
 # Simple test file for syntax coloration check on VSCode.
 #
@@ -98,6 +106,51 @@ load test_helper
 }
 @test 'some test' {
   run refute false
+}
+
+# bats-file
+#
+# assert_exist assert_not_exist
+@test 'some test' {
+  assert_exist ''
+  assert_not_exist ''
+  assert_file_exist
+  assert_file_not_exist
+  assert_dir_exist
+  assert_dir_not_exist
+  assert_link_exist
+  assert_link_not_exist
+  assert_block_exist
+  assert_block_not_exist
+  assert_character_exist
+  assert_character_not_exist
+  assert_socket_exist
+  assert_socket_not_exist
+  assert_fifo_exist
+  assert_fifo_not_exist
+  assert_file_executable
+  assert_file_not_executable
+  assert_file_owner
+  assert_file_not_owner
+  assert_file_permission
+  assert_not_file_permission
+  assert_file_not_permission # not highlighted
+  assert_file_size_equals
+  assert_size_zero
+  assert_size_not_zero
+  assert_file_group_id_set
+  assert_file_not_group_id_set
+  assert_file_user_id_set
+  assert_file_not_user_id_set
+  assert_sticky_bit
+  assert_no_sticky_bit
+  assert_not_sticky_bit # not highlighted
+  assert_file_empty
+  assert_file_not_empty
+  assert_file_contains
+  # assert_file_not_contains deprecated
+  assert_symlink_to
+  assert_not_symlink_to
 }
 
 ##
