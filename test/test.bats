@@ -27,6 +27,12 @@ load test_helper
   [ "${lines[@]}" = 1 ]
   [ "$output" == 'some value' ]
 }
+# using --separate-stderr
+@test 'some other test' {
+  run foo
+  [ "${stderr_lines[@]}" = 1 ]
+  [ "$stderr" == 'some value' ]
+}
 
 ##
 # bats-support
