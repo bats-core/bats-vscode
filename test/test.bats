@@ -1,5 +1,13 @@
 #!/usr/bin/env bats
 
+setup_file() {
+  :
+}
+
+teardown_file() {
+  :
+}
+
 ##
 # Simple test file for syntax coloration check on VSCode.
 #

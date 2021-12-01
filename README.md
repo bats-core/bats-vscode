@@ -1,12 +1,12 @@
 # BATS (Bash Automated Testing System) for VSCode
 
 [![Current Version](https://img.shields.io/visual-studio-marketplace/v/jetmartin.bats.svg?color=emerald&label=Visual%20Studio%20Marketplace&logo=visual-studio-code&logoColor=blue&style=flat)
-![Install Count](https://img.shields.io/visual-studio-marketplace/i/jetmartin.bats.svg?color=emerald&style=flat) 
+![Install Count](https://img.shields.io/visual-studio-marketplace/i/jetmartin.bats.svg?color=emerald&style=flat)
 ![downloads Count](https://img.shields.io/visual-studio-marketplace/d/jetmartin.bats.svg?color=emerald&style=flat)][marketplace]
  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jetmartin/bats.svg?color=emerald&label=release&logoColor=white&logo=github&labelColor=grey)][github]
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)][MIT]
 
-This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode].
+This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode]. Updated for Bats [v1.5.0]
 
 ## ![tada][_tada] Features
 
@@ -182,6 +182,7 @@ This extension was inspired by [sublime-bats].
 <!-- Links -->
 
 [Bats]: <https://github.com/bats-core/bats-core>
+[v1.5.0]: <https://github.com/bats-core/bats-core/releases/tag/v1.5.0>
 [sBats]: <https://github.com/sstephenson/bats>
 [@sstephenson]: <https://github.com/sstephenson>
 [@bats-core]: <https://github.com/bats-core>

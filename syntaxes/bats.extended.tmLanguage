@@ -17,7 +17,7 @@
             <!-- bats -->
             <dict>
                 <key>match</key>
-                <string>\b(run|load|skip)\b</string>
+                <string>\b(run|load|skip|setup|teardown|setup_file|teardown_file)\b</string>
                 <key>name</key>
                 <string>support.function.bats.builtin</string>
             </dict>
