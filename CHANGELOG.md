@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+- [x] ![sparkles][_sparkles] Add snippets for `bats-file` community module
+- [x] ![sparkles][_sparkles] Update bats community module to core module in doc
+- [x] ![sparkles][_sparkles] Add support to `bats` v1.5.0
+
 ## [0.1.7] - 2019-11-04
 
 - [x] ![bug][_bug] docs: Remove release on CDN urls due to vsce packaging issue
