@@ -17,7 +17,7 @@
             <!-- bats -->
             <dict>
                 <key>match</key>
-                <string>\b(run|load|skip)\b</string>
+                <string>\b(run|load|skip|setup|teardown|setup_file|teardown_file)\b</string>
                 <key>name</key>
                 <string>support.function.bats.builtin</string>
             </dict>
@@ -39,6 +39,13 @@
             <dict>
                 <key>match</key>
                 <string>\b(stub|unstub)\b</string>
+                <key>name</key>
+                <string>support.function.bats.assertions</string>
+            </dict>
+            <!-- bats-file -->
+            <dict>
+                <key>match</key>
+                <string>\b(assert_((((file|dir|link|block|character|socket|fifo)_)?(not_)?exist)|(file_((not_)?(executable|owner|group_id_set|user_id_set|empty)))|(not_)?file_permission|file_size_equals|size_(not_)?zero|(no_)?sticky_bit|file_contains|(not_)?symlink_to))\b</string>
                 <key>name</key>
                 <string>support.function.bats.assertions</string>
             </dict>

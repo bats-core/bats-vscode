@@ -6,7 +6,7 @@
  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jetmartin/bats.svg?color=emerald&label=release&logoColor=white&logo=github&labelColor=grey)][github]
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)][MIT]
 
-This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode].
+This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode]. Updated for Bats [v1.5.0]
 
 ## ![tada][_tada] Features
 
@@ -42,7 +42,7 @@ Project | version | code snippets | syntax highlighting
 <https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | ![Y][_white_check_mark] | ![Y][_white_check_mark]
 <https://github.com/bats-core/bats-assert> | [![bats-assert project][badge-assert]][bats-assert-l]    | ![Y][_white_check_mark] | ![Y][_white_check_mark]
 <https://github.com/bats-core/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
-<https://github.com/bats-core/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | ![N][_negative_squared_cross_mark] | ![N][_negative_squared_cross_mark]
+<https://github.com/bats-core/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
 <https://github.com/lox/bats-mock>            | [![bats-mock project][badge-mock]][bats-mock-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
 
 ## ![scissors][_scissors] Snippets
@@ -182,6 +182,7 @@ This extension was inspired by [sublime-bats].
 <!-- Links -->
 
 [Bats]: <https://github.com/bats-core/bats-core>
+[v1.5.0]: <https://github.com/bats-core/bats-core/releases/tag/v1.5.0>
 [sBats]: <https://github.com/sstephenson/bats>
 [@sstephenson]: <https://github.com/sstephenson>
 [@bats-core]: <https://github.com/bats-core>
