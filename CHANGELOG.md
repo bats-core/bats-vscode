@@ -4,9 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-- [x] ![sparkles][_sparkles] Add snippets for `bats-file` community module
-- [x] ![sparkles][_sparkles] Update bats community module to core module in doc
-- [x] ![sparkles][_sparkles] Add support to `bats` v1.5.0
+## [0.1.8]
+
+### Added
+
+- [x] ![sparkles][_sparkles] Add support to `bats` [v1.5.0](https://github.com/bats-core/bats-core/releases/tag/v1.5.0) new features
+- [x] ![sparkles][_sparkles] Add highlights for `bats-file` core module
+- [x] ![busts_in_silhouette][_busts_in_silhouette] Add [Edwin Kofler (hyperupcall)](https://github.com/hyperupcall) as a [contributor]
+
+### Changed
+
+- [x] ![memo][_memo] Update bats community modules to core modules
 
 ## [0.1.7] - 2019-11-04
 
@@ -88,7 +96,9 @@ All notable changes to this project will be documented in this file.
 [bats-core]: <https://github.com/bats-core/bats-core>
 [sBats]: <https://github.com/sstephenson/bats>
 
-[unreleased]: <https://github.com/jetmartin/bats/compare/v0.1.6...HEAD>
+[unreleased]: <https://github.com/jetmartin/bats/compare/v0.1.8...HEAD>
+[0.1.8]: <https://github.com/jetmartin/bats/compare/v0.1.7...v0.1.8>
+[0.1.7]: <https://github.com/jetmartin/bats/compare/v0.1.6...v0.1.7>
 [0.1.6]: <https://github.com/jetmartin/bats/compare/v0.1.5...v0.1.6>
 [0.1.5]: <https://github.com/jetmartin/bats/compare/v0.1.4...v0.1.5>
 [0.1.4]: <https://github.com/jetmartin/bats/compare/v0.1.3...v0.1.4>

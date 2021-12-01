@@ -6,7 +6,7 @@
  [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jetmartin/bats.svg?color=emerald&label=release&logoColor=white&logo=github&labelColor=grey)][github]
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)][MIT]
 
-This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode]. Updated for Bats [v1.5.0]
+This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode].
 
 ## ![tada][_tada] Features
 
@@ -22,9 +22,9 @@ This extension adds language support for the [Bats] (Bash Automated Testing Syst
 
 ## ![bat][_bat] Bats
 
-[Bash Automated Testing System (2018)][bats-core] is a [community-maintained][@bats-core] Bats project.
+[Bash Automated Testing System (2021)][bats-core] is a [community-maintained][@bats-core] Bats project.
 > (c) 2011-2016 [Sam Stephenson][@sstephenson]\
-> (c) 2017-2018 [bats-core organization][@bats-core]
+> (c) 2017-2021 [bats-core organization][@bats-core]
 
 Bats is a [TAP]-compliant testing framework for Bash. It provides a simple way to verify that the UNIX programs you write behave as expected.
 
@@ -50,9 +50,9 @@ Project | version | code snippets | syntax highlighting
 These modules have snippets:
 
 - [x] <https://github.com/bats-core/bats-core>
-- [x] <https://github.com/jasonkarns/bats-assert-1>
-- [ ] <https://github.com/jasonkarns/bats-support>
-- [ ] <https://github.com/ztombol/bats-file>
+- [x] <https://github.com/bats-core/bats-assert>
+- [ ] <https://github.com/bats-core/bats-support>
+- [ ] <https://github.com/bats-core/bats-file>
 - [ ] <https://github.com/lox/bats-mock>
 
 Type `BATS:*snippet*` to use snippets.
@@ -95,9 +95,9 @@ Type `BATS:*snippet*` to use snippets.
 These modules have syntax highlighting support:
 
 - [x] <https://github.com/bats-core/bats-core>
-- [x] <https://github.com/jasonkarns/bats-assert-1>
-- [x] <https://github.com/jasonkarns/bats-support>
-- [ ] <https://github.com/ztombol/bats-file>
+- [x] <https://github.com/bats-core/bats-assert>
+- [x] <https://github.com/bats-core/bats-support>
+- [x] <https://github.com/bats-core/bats-file>
 - [x] <https://github.com/lox/bats-mock>
 
 <!--  <https://github.com/grayhemp/bats-mock> :thinking: -->
