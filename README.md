@@ -40,9 +40,9 @@ A **`.bats`** test file is a Bash script with special syntax for defining test c
 Project | version | code snippets | syntax highlighting
  :--- | ---: |  :---: | :---:
 <https://github.com/bats-core/bats-core>      | [![bats-core project][badge-core]][bats-core-l]          | ![Y][_white_check_mark] | ![Y][_white_check_mark]
-<https://github.com/jasonkarns/bats-assert-1> | [![bats-assert project][badge-assert]][bats-assert-l]    | ![Y][_white_check_mark] | ![Y][_white_check_mark]
-<https://github.com/jasonkarns/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
-<https://github.com/ztombol/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
+<https://github.com/bats-core/bats-assert> | [![bats-assert project][badge-assert]][bats-assert-l]    | ![Y][_white_check_mark] | ![Y][_white_check_mark]
+<https://github.com/bats-core/bats-support>  | [![bats-support project][badge-support]][bats-support-l] | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
+<https://github.com/bats-core/bats-file>        | [![bats-file project][badge-file]][bats-file-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
 <https://github.com/lox/bats-mock>            | [![bats-mock project][badge-mock]][bats-mock-l]          | ![N][_negative_squared_cross_mark] | ![Y][_white_check_mark]
 
 ## ![scissors][_scissors] Snippets
@@ -198,22 +198,22 @@ This extension was inspired by [sublime-bats].
 [humanstxt]: <https://github.com/jetmartin/bats/blob/master/humans.txt>
 
 [bats-core]: <https://github.com/bats-core/bats-core>
-[bats-assert]: <https://github.com/jasonkarns/bats-assert-1>
-[bats-support]: <https://github.com/jasonkarns/bats-support>
-[bats-file]: <https://github.com/ztombol/bats-file>
+[bats-assert]: <https://github.com/bats-core/bats-assert>
+[bats-support]: <https://github.com/bats-core/bats-support>
+[bats-file]: <https://github.com/bats-core/bats-file>
 [bats-mock]: <https://github.com/lox/bats-mock>
 [grayhemp-mock]: <https://github.com/grayhemp/bats-mock>
 
 [bats-core-l]: <https://github.com/bats-core/bats-core/releases/latest>
-[bats-assert-l]: <https://github.com/jasonkarns/bats-assert-1/releases/latest>
-[bats-support-l]: <https://github.com/jasonkarns/bats-support/releases/latest>
-[bats-file-l]: <https://github.com/ztombol/bats-file/releases/latest>
+[bats-assert-l]: <https://github.com/bats-core/bats-assert/releases/latest>
+[bats-support-l]: <https://github.com/bats-core/bats-support/releases/latest>
+[bats-file-l]: <https://github.com/bats-core/bats-file/releases/latest>
 [bats-mock-l]: <https://github.com/lox/bats-mock/releases/latest>
 
 [badge-core]: <https://img.shields.io/github/release/bats-core/bats-core.svg?style=flat-square&labelColor=olivedrab&color=grey&label=bats-core>
-[badge-assert]: <https://img.shields.io/github/package-json/v/jasonkarns/bats-assert-1.svg?label=bats-assert&style=flat-square&labelColor=royalblue&color=grey>
-[badge-support]: <https://img.shields.io/github/package-json/v/jasonkarns/bats-support.svg?style=flat-square&color=grey&labelColor=sienna&label=bats-support>
-[badge-file]: <https://img.shields.io/github/package-json/v/ztombol/bats-file.svg?style=flat-square&color=grey&labelColor=indianred&label=bats-file>
+[badge-assert]: <https://img.shields.io/github/package-json/v/bats-core/bats-assert.svg?label=bats-assert&style=flat-square&labelColor=royalblue&color=grey>
+[badge-support]: <https://img.shields.io/github/package-json/v/bats-core/bats-support.svg?style=flat-square&color=grey&labelColor=sienna&label=bats-support>
+[badge-file]: <https://img.shields.io/github/package-json/v/bats-core/bats-file.svg?style=flat-square&color=grey&labelColor=indianred&label=bats-file>
 [badge-mock]: <https://img.shields.io/github/release/lox/bats-mock.svg?style=flat-square&color=grey&labelColor=orchid&label=bats-mock>
 
 [command palette]: <https://code.visualstudio.com/Docs/editor/codebasics#_command-palette>
