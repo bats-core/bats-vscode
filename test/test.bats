@@ -134,7 +134,7 @@ load test_helper
   assert_file_not_owner
   assert_file_permission
   assert_not_file_permission
-  assert_file_not_permission # not highlighted
+  assert_file_not_permission
   assert_file_size_equals
   assert_size_zero
   assert_size_not_zero
@@ -144,7 +144,7 @@ load test_helper
   assert_file_not_user_id_set
   assert_sticky_bit
   assert_no_sticky_bit
-  assert_not_sticky_bit # not highlighted
+  assert_not_sticky_bit
   assert_file_empty
   assert_file_not_empty
   assert_file_contains
