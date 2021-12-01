@@ -2,7 +2,7 @@
     "name": "bats",
     "displayName": "Bats (Bash Automated Testing System)",
     "description": "Bats (Bash Automated Testing System) language support for VSCode.",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "publisher": "jetmartin",
     "author": {
         "name": "J-Et. Martin",
