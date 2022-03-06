@@ -59,15 +59,16 @@ Type `BATS:*snippet*` to use snippets.
 
 [![bats-core snippets][badge-core]][bats-core-l]
 
-- [x] **BATS:env**      : shebang.
-- [x] **BATS:setup**    : Setup function.
-- [x] **BATS:teardown** : Teardown function.
-- [x] **BATS:load**     : Load common code.
-- [x] **BATS:test**     : Test case.
-- [x] **BATS:status**   : Test status code.
-- [x] **BATS:output**   : Test output.
-- [x] **BATS:line**     : Test line output.
-- [x] **BATS:skip**     : Skip test.
+- [x] **BATS:env**               : shebang.
+- [x] **BATS:setup**             : Setup function.
+- [x] **BATS:teardown**          : Teardown function.
+- [x] **BATS:load**              : Load common code.
+- [x] **BATS:bats_load_library** : Load system-wide libraries.
+- [x] **BATS:test**              : Test case.
+- [x] **BATS:status**            : Test status code.
+- [x] **BATS:output**            : Test output.
+- [x] **BATS:line**              : Test line output.
+- [x] **BATS:skip**              : Skip test.
 
 [![bats-assert snippets][badge-assert]][bats-assert-l]
 
@@ -77,6 +78,7 @@ Type `BATS:*snippet*` to use snippets.
 - [x] **BATS:assert_success**
 - [x] **BATS:assert_failure**
 - [x] **BATS:assert_equal**
+- [x] **BATS:assert_not_equal**
 - [x] **BATS:refute**
 - [x] **BATS:refute_output**
 - [x] **BATS:refute_line**
