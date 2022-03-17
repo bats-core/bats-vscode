@@ -15,4 +15,6 @@ Contributor: Jack Hayhurst (@jakdept)
 
 Contributor: Edwin Kofler (@hyperupcall)
 
+Contributor: (@NorthboundTrain)
+
 Inspiration: https://github.com/jverdeyen/sublime-bats

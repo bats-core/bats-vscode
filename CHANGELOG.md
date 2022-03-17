@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [0.1.9]
+
+### Added
+
+- [x] ![sparkles][_sparkles] Add missing keywords: assert_not_equal, bats_load_library
+- [x] ![sparkles][_sparkles] Add documented shell variables
+- [x] ![busts_in_silhouette][_busts_in_silhouette] Add [(NorthboundTrain)](https://github.com/NorthboundTrain) as a [contributor]
+
 ## [0.1.8]
 
 ### Added
@@ -96,7 +104,8 @@ All notable changes to this project will be documented in this file.
 [bats-core]: <https://github.com/bats-core/bats-core>
 [sBats]: <https://github.com/sstephenson/bats>
 
-[unreleased]: <https://github.com/jetmartin/bats/compare/v0.1.8...HEAD>
+[unreleased]: <https://github.com/jetmartin/bats/compare/v0.1.9...HEAD>
+[0.1.9]: <https://github.com/jetmartin/bats/compare/v0.1.8...v0.1.9>
 [0.1.8]: <https://github.com/jetmartin/bats/compare/v0.1.7...v0.1.8>
 [0.1.7]: <https://github.com/jetmartin/bats/compare/v0.1.6...v0.1.7>
 [0.1.6]: <https://github.com/jetmartin/bats/compare/v0.1.5...v0.1.6>
