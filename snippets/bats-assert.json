@@ -79,6 +79,7 @@
         ],
         "description": "@test assert_success: Fail if $status is not 0."
     },
+
     "@test assert_equal: Fail if the two parameters, actual and expected value respectively, do not equal.": {
         "prefix": "BATS:assert_equal <actual> <expected>",
         "body": [
@@ -92,6 +93,21 @@
             "}\n\n"
         ],
         "description": "@test assert_equal: Fail if the actual and expected values are not equal."
+    },
+
+    "@test assert_not_equal: Fail if the two parameters, actual and expected value respectively, are equal.": {
+        "prefix": "BATS:assert_not_equal <actual> <expected>",
+        "body": [
+            "@test '${1:describe test for assert_not_equal()}' {",
+            "\tassert_not_equal '${2:have}' '${3:want}'\n",
+            "\t# On failure, the expected and actual values are displayed.",
+            "\t# -- values should not be equal --",
+            "\t# expected : want",
+            "\t# actual   : have",
+            "\t# --",
+            "}\n\n"
+        ],
+        "description": "@test assert_not_equal: Fail if the actual and expected values are equal."
     },
 
     "@test assert_failure (status): Fail if $status is 0.": {
@@ -475,4 +491,3 @@
         "description": "@test refute_line (regexp): The assertion fails if the extended regular expression matches the line being tested. Regular expression matching can be enabled with the --regexp option (-e for short). This option and partial matching (--partial or -p) are mutually exclusive. An error is displayed when used simultaneously."
     },
 }
-

@@ -17,7 +17,7 @@
             <!-- bats -->
             <dict>
                 <key>match</key>
-                <string>\b(run|load|skip|setup|teardown|setup_file|teardown_file)\b</string>
+                <string>\b(run|load|bats_load_library|skip|setup|teardown|setup_file|teardown_file)\b</string>
                 <key>name</key>
                 <string>support.function.bats.builtin</string>
             </dict>
@@ -31,7 +31,7 @@
             <!-- bats-assert -->
             <dict>
                 <key>match</key>
-                <string>\b(assert|refute|assert_(equal|success|failure|output|line)|refute_(output|line))\b</string>
+                <string>\b(assert|refute|assert_(equal|not_equal|success|failure|output|line)|refute_(output|line))\b</string>
                 <key>name</key>
                 <string>support.function.bats.assertions</string>
             </dict>

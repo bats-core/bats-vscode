@@ -15,10 +15,11 @@ teardown_file() {
 ##
 # bats-core
 #
-# load run skip
+# load bats_load_library run skip
 # output status lines
 
 load test_helper
+bats_load_library test_helper
 @test 'some test' {
   run foo
   skip echo "${var}"
@@ -83,14 +84,17 @@ load test_helper
 ##
 # bats-assert
 #
-# assert assert_equal assert_success assert_failure assert_output
-# refute_output assert_line refute_line refute
+# assert assert_equal assert_not_equal assert_success assert_failure
+# assert_output refute_output assert_line refute_line refute
 
 @test 'some test' {
   run assert true
 }
 @test 'some test' {
   run assert_equal 'a' 'a'
+}
+@test 'some test' {
+  run assert_not_equal 'a' 'b'
 }
 @test 'some test' {
   run assert_success
