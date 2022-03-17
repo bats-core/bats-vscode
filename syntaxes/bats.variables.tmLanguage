@@ -16,6 +16,12 @@
             </dict>
             <dict>
                 <key>match</key>
+                <string>\$BATS_(RUN_COMMAND|TEST_(FILENAME|DIRNAME|NAMES?|DESCRIPTION)|(SUITE_)?TEST_NUMBER|((RUN|FILE|SUITE|TEST)_)?TMPDIR|FILE_EXTENSION|VERSION)\b</string>
+                <key>name</key>
+                <string>support.variable.bats</string>
+            </dict>
+            <dict>
+                <key>match</key>
                 <string>\$\{#?(output|status|lines|stderr|stderr_lines)\b</string>
                 <key>captures</key>
                 <dict>
