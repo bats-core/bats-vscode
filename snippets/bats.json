@@ -23,6 +23,10 @@
       "prefix": "BATS:load",
       "body": "load ${0:someFile}"
     },
+    "Bats.bats_load_library": {
+      "prefix": "BATS:bats_load_library",
+      "body": "bats_load_library ${0:library_name/file_to_load}"
+    },
     "Bats.Skip": {
       "prefix": "BATS:skip",
       "body": "skip"
