@@ -118,12 +118,75 @@ bats_load_library test_helper
   run refute false
 }
 
-# bats-file
+##
+# bats-file v0.4.0
 #
-# assert_exist assert_not_exist
+# Index of all functions :
+# assert_exists assert_not_exists
+# assert_file_executable assert_file_not_executable
+# assert_file_empty assert_file_not_empty
+# assert_file_exists assert_file_not_exists
+# assert_file_owner assert_file_not_owner
+# assert_file_contains assert_file_not_contains
+# assert_dir_exists assert_dir_not_exists
+# assert_file_permission assert_not_file_permission
+# assert_symlink_to assert_not_symlink_to
+# assert_link_exists assert_link_not_exists
+# assert_file_size_equals
+# assert_block_exists assert_block_not_exists
+# assert_size_zero assert_size_not_zero
+# assert_character_exists assert_character_not_exists
+# assert_file_group_id_set assert_file_not_group_id_set
+# assert_socket_exists assert_socket_not_exists
+# assert_file_user_id_set assert_file_not_user_id_set
+# assert_fifo_exists assert_fifo_not_exists
+# assert_sticky_bit assert_no_sticky_bit
+
 @test 'some test' {
-  assert_exist ''
-  assert_not_exist ''
+  assert_exists
+  assert_not_exists
+  assert_file_executable
+  assert_file_not_executable
+  assert_file_empty
+  assert_file_not_empty
+  assert_file_exists
+  assert_file_not_exists
+  assert_file_owner
+  assert_file_not_owner
+  assert_file_contains
+  assert_file_not_contains
+  assert_dir_exists
+  assert_dir_not_exists
+  assert_file_permission
+  assert_not_file_permission
+  assert_symlink_to
+  assert_not_symlink_to
+  assert_link_exists
+  assert_link_not_exists
+  assert_file_size_equals
+  assert_block_exists
+  assert_block_not_exists
+  assert_size_zero
+  assert_size_not_zero
+  assert_character_exists
+  assert_character_not_exists
+  assert_file_group_id_set
+  assert_file_not_group_id_set
+  assert_socket_exists
+  assert_socket_not_exists
+  assert_file_user_id_set
+  assert_file_not_user_id_set
+  assert_fifo_exists
+  assert_fifo_not_exists
+  assert_sticky_bit
+  assert_no_sticky_bit	
+}
+##
+# bats-file
+# Deprecated (for compatibility < 0.4.0)
+@test 'some test' {
+  assert_exist
+  assert_not_exist
   assert_file_exist
   assert_file_not_exist
   assert_dir_exist
@@ -135,32 +198,6 @@ bats_load_library test_helper
   assert_character_exist
   assert_character_not_exist
   assert_socket_exist
-  assert_socket_not_exist
-  assert_fifo_exist
-  assert_fifo_not_exist
-  assert_file_executable
-  assert_file_not_executable
-  assert_file_owner
-  assert_file_not_owner
-  assert_file_permission
-  assert_not_file_permission
-  assert_file_not_permission
-  assert_file_size_equals
-  assert_size_zero
-  assert_size_not_zero
-  assert_file_group_id_set
-  assert_file_not_group_id_set
-  assert_file_user_id_set
-  assert_file_not_user_id_set
-  assert_sticky_bit
-  assert_no_sticky_bit
-  assert_not_sticky_bit
-  assert_file_empty
-  assert_file_not_empty
-  assert_file_contains
-  # assert_file_not_contains deprecated
-  assert_symlink_to
-  assert_not_symlink_to
 }
 
 ##

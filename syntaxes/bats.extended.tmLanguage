@@ -45,7 +45,7 @@
             <!-- bats-file -->
             <dict>
                 <key>match</key>
-                <string>\b(assert_((((file|dir|link|block|character|socket|fifo)_)?(not_)?exist)|(file_((not_)?(executable|owner|group_id_set|user_id_set|empty|permission))|not_file_permission)|file_size_equals|size_(not_)?zero|(no_|not_)?sticky_bit|file_contains|(not_)?symlink_to))\b</string>
+                <string>\b(assert_((((file|dir|link|block|character|socket|fifo)_)?(not_)?(exist|exists))|(file_((not_)?(executable|owner|group_id_set|user_id_set|empty|permission))|not_file_permission)|file_size_equals|size_(not_)?zero|(no_|not_)?sticky_bit|file_contains|file_not_contains|(not_)?symlink_to))\b</string>
                 <key>name</key>
                 <string>support.function.bats.assertions</string>
             </dict>
