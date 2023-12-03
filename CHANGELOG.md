@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-## [0.1.9]
+## [0.1.10] - 2023-12-03
+
+### Changed
+
+- [x] ![sparkles][_sparkles] Language support update for bats-file 0.4.0
+
+## [0.1.9] - 2022-03-17
 
 ### Added
 
@@ -12,7 +18,7 @@ All notable changes to this project will be documented in this file.
 - [x] ![sparkles][_sparkles] Add documented shell variables
 - [x] ![busts_in_silhouette][_busts_in_silhouette] Add [(NorthboundTrain)](https://github.com/NorthboundTrain) as a [contributor]
 
-## [0.1.8]
+## [0.1.8] - 2021-01-12
 
 ### Added
 
@@ -104,7 +110,8 @@ All notable changes to this project will be documented in this file.
 [bats-core]: <https://github.com/bats-core/bats-core>
 [sBats]: <https://github.com/sstephenson/bats>
 
-[unreleased]: <https://github.com/jetmartin/bats/compare/v0.1.9...HEAD>
+[unreleased]: <https://github.com/jetmartin/bats/compare/v0.1.10...HEAD>
+[0.1.10]: <https://github.com/jetmartin/bats/compare/v0.1.9...v0.1.10>
 [0.1.9]: <https://github.com/jetmartin/bats/compare/v0.1.8...v0.1.9>
 [0.1.8]: <https://github.com/jetmartin/bats/compare/v0.1.7...v0.1.8>
 [0.1.7]: <https://github.com/jetmartin/bats/compare/v0.1.6...v0.1.7>
