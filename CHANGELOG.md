@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+### Changed
+
+- [x] ![sparkles][_sparkles] Migration to [Bats-Core](https://github.com/bats-core) org
+- [x] ![memo][_memo] docs: Licence and others docs updated to [Bats-Core](https://github.com/bats-core) migrated repos instead of former [jetmartin](https://github.com/jetmartin)
+
+## [0.1.9] - 2022-03-17
+
+### Added
+
+- [x] ![memo][_memo] docs: add contributing documentation
+
 ## [0.1.10] - 2023-12-03
 
 ### Changed
@@ -110,28 +121,28 @@ All notable changes to this project will be documented in this file.
 [bats-core]: <https://github.com/bats-core/bats-core>
 [sBats]: <https://github.com/sstephenson/bats>
 
-[unreleased]: <https://github.com/jetmartin/bats/compare/v0.1.10...HEAD>
-[0.1.10]: <https://github.com/jetmartin/bats/compare/v0.1.9...v0.1.10>
-[0.1.9]: <https://github.com/jetmartin/bats/compare/v0.1.8...v0.1.9>
-[0.1.8]: <https://github.com/jetmartin/bats/compare/v0.1.7...v0.1.8>
-[0.1.7]: <https://github.com/jetmartin/bats/compare/v0.1.6...v0.1.7>
-[0.1.6]: <https://github.com/jetmartin/bats/compare/v0.1.5...v0.1.6>
-[0.1.5]: <https://github.com/jetmartin/bats/compare/v0.1.4...v0.1.5>
-[0.1.4]: <https://github.com/jetmartin/bats/compare/v0.1.3...v0.1.4>
-[0.1.3]: <https://github.com/jetmartin/bats/compare/v0.1.2...v0.1.3>
-[0.1.2]: <https://github.com/jetmartin/bats/compare/v0.1.1...v0.1.2>
-[0.1.1]: <https://github.com/jetmartin/bats/compare/v0.1.0...v0.1.1>
-[0.1.0]: <https://github.com/jetmartin/bats/compare/v0.0.1...v0.1.0>
+[unreleased]: <https://github.com/bats-core/bats-vscode/compare/v0.1.10...HEAD>
+[0.1.10]: <https://github.com/bats-core/bats-vscode/compare/v0.1.9...v0.1.10>
+[0.1.9]: <https://github.com/bats-core/bats-vscode/compare/v0.1.8...v0.1.9>
+[0.1.8]: <https://github.com/bats-core/bats-vscode/compare/v0.1.7...v0.1.8>
+[0.1.7]: <https://github.com/bats-core/bats-vscode/compare/v0.1.6...v0.1.7>
+[0.1.6]: <https://github.com/bats-core/bats-vscode/compare/v0.1.5...v0.1.6>
+[0.1.5]: <https://github.com/bats-core/bats-vscode/compare/v0.1.4...v0.1.5>
+[0.1.4]: <https://github.com/bats-core/bats-vscode/compare/v0.1.3...v0.1.4>
+[0.1.3]: <https://github.com/bats-core/bats-vscode/compare/v0.1.2...v0.1.3>
+[0.1.2]: <https://github.com/bats-core/bats-vscode/compare/v0.1.1...v0.1.2>
+[0.1.1]: <https://github.com/bats-core/bats-vscode/compare/v0.1.0...v0.1.1>
+[0.1.0]: <https://github.com/bats-core/bats-vscode/compare/v0.0.1...v0.1.0>
 
-[_bento]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_bento.png>
-[_bookmark]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_bookmark.png>
-[_busts_in_silhouette]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_busts_in_silhouette.png>
-[_bug]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_bug.png>
-[_children_crossing]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_children_crossing.png>
-[_fire]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_fire.png>
-[_memo]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_memo.png>
-[_pencil2]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_pencil2.png>
-[_page_facing_up]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_page_facing_up.png>
-[_rotating_light]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_rotating_light.png>
-[_sparkles]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_sparkles.png>
-[_tada]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_tada.png>
+[_bento]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_bento.png>
+[_bookmark]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_bookmark.png>
+[_busts_in_silhouette]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_busts_in_silhouette.png>
+[_bug]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_bug.png>
+[_children_crossing]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_children_crossing.png>
+[_fire]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_fire.png>
+[_memo]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_memo.png>
+[_pencil2]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_pencil2.png>
+[_page_facing_up]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_page_facing_up.png>
+[_rotating_light]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_rotating_light.png>
+[_sparkles]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_sparkles.png>
+[_tada]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_tada.png>
