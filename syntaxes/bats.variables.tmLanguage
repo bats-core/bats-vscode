@@ -22,7 +22,7 @@
             </dict>
             <dict>
                 <key>match</key>
-                <string>\${#?(output|status|lines|stderr|stderr_lines)\b[^}]*}</string>
+                <string>\${#?(output|status|lines|stderr|stderr_lines)(\[.*.\])?}</string>
                 <key>captures</key>
                 <dict>
                     <key>1</key>
@@ -46,7 +46,7 @@
             </dict>
             <dict>
                 <key>match</key>
-                <string>\${#?(BATS_(RUN_COMMAND|TEST_(FILENAME|DIRNAME|NAMES?|DESCRIPTION)|(SUITE_)?TEST_NUMBER|((RUN|FILE|SUITE|TEST)_)?TMPDIR|FILE_EXTENSION|VERSION))\b[^}]*}</string>
+                <string>\${#?(BATS_(RUN_COMMAND|TEST_(FILENAME|DIRNAME|NAMES?|DESCRIPTION)|(SUITE_)?TEST_NUMBER|((RUN|FILE|SUITE|TEST)_)?TMPDIR|FILE_EXTENSION|VERSION))(\[.*.\])?}</string>
                 <key>captures</key>
                 <dict>
                     <key>1</key>
