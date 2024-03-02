@@ -25,13 +25,14 @@ bats_load_library test_helper
   skip echo "${var}"
   [ "$status" -eq 0 ]
   [ "${lines[0]}" = "${some_var}" ]
-  [ "${lines[@]}" = 1 ]
+  [ "${#lines[@]}" = 1 ]
   [ "$output" == 'some value' ]
 }
 # using --separate-stderr
 @test 'some other test' {
   run foo
-  [ "${stderr_lines[@]}" = 1 ]
+  [ "${stderr_lines[0]}" = "${other_var}" ]
+  [ "${#stderr_lines[@]}" = 1 ]
   [ "$stderr" == 'some value' ]
 }
 
@@ -179,7 +180,7 @@ bats_load_library test_helper
   assert_fifo_exists
   assert_fifo_not_exists
   assert_sticky_bit
-  assert_no_sticky_bit	
+  assert_no_sticky_bit
 }
 ##
 # bats-file
@@ -231,3 +232,59 @@ $BATS_SUITE_TMPDIR
 $BATS_FILE_TMPDIR
 $BATS_TEST_TMPDIR
 $BATS_VERSION
+
+# exercise the syntax color in various ways on a Bats variable name
+
+$BATS_TEST_DIRNAME
+${BATS_TEST_DIRNAME}
+${BATS_TEST_DIRNAME##*/}
+${BATS_TEST_DIRNAME%/*}
+${BATS_TEST_DIRNAME:1:2}
+${#BATS_TEST_DIRNAME}
+$BATS_TEST_DIRNAME/file
+${BATS_TEST_DIRNAME}/file
+var=$BATS_TEST_DIRNAME
+var=${BATS_TEST_DIRNAME}
+var=$BATS_TEST_DIRNAME/file
+var=${BATS_TEST_DIRNAME}/file
+"$BATS_TEST_DIRNAME"
+"${BATS_TEST_DIRNAME}"
+"$BATS_TEST_DIRNAME/file"
+"${BATS_TEST_DIRNAME}/file"
+var="$BATS_TEST_DIRNAME"
+var="${BATS_TEST_DIRNAME}"
+var="$BATS_TEST_DIRNAME/file"
+var="${BATS_TEST_DIRNAME}/file"
+
+# exercise the syntax color in various ways on a Bats output variable name
+
+$stderr_lines
+${stderr_lines}
+${stderr_lines[3]}
+${stderr_lines##*/}
+${stderr_lines%/*}
+${stderr_lines:1:2}
+${#stderr_lines[@]}
+$stderr_lines-composite
+${stderr_lines}composite
+var=$stderr_lines
+var=${stderr_lines}
+var=${stderr_lines[3]}
+var=${#stderr_lines[@]}
+var=$stderr_lines-composite
+var=${stderr_lines}composite
+var=${stderr_lines[3]}composite
+"$stderr_lines"
+"${stderr_lines}"
+"${stderr_lines[3]}"
+"${#stderr_lines[@]}"
+"$stderr_lines-composite"
+"${stderr_lines}composite"
+"${stderr_lines[3]}composite"
+var="$stderr_lines"
+var="${stderr_lines}"
+var="${stderr_lines[3]}"
+var="${#stderr_lines[@]}"
+var="$stderr_lines-composite"
+var="${stderr_lines}composite"
+var="${stderr_lines[3]}composite"
