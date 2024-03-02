@@ -3,7 +3,7 @@
 [![Current Version](https://img.shields.io/visual-studio-marketplace/v/jetmartin.bats.svg?color=emerald&label=Visual%20Studio%20Marketplace&logo=visual-studio-code&logoColor=blue&style=flat)
 ![Install Count](https://img.shields.io/visual-studio-marketplace/i/jetmartin.bats.svg?color=emerald&style=flat)
 ![downloads Count](https://img.shields.io/visual-studio-marketplace/d/jetmartin.bats.svg?color=emerald&style=flat)][marketplace]
- [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/jetmartin/bats.svg?color=emerald&label=release&logoColor=white&logo=github&labelColor=grey)][github]
+ [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/bats-core/bats-vscode.svg?color=emerald&label=release&logoColor=white&logo=github&labelColor=grey)][github]
 [![license](https://img.shields.io/badge/license-MIT-brightgreen.svg)][MIT]
 
 This extension adds language support for the [Bats] (Bash Automated Testing System) testing framework to [VS Code][vscode].
@@ -165,7 +165,7 @@ See [Changelog].
 
 ### ![exclamation][_exclamation]Known Issues
 
-[![GitHub issues](https://img.shields.io/github/issues/jetmartin/bats.svg?color=tomato)][issues]
+[![GitHub issues](https://img.shields.io/github/issues/bats-core/bats-vscode.svg?color=tomato)][issues]
 
 Feel free to report any [issues][new issue].
 
@@ -192,12 +192,12 @@ This extension was inspired by [sublime-bats].
 [Bash]: <https://www.gnu.org/software/bash/>
 [bats-readme]: <https://github.com/bats-core/bats-core/blob/master/README.md>
 [marketplace]: <https://marketplace.visualstudio.com/items?itemName=jetmartin.bats>
-[github]: <https://github.com/jetmartin/bats>
-[issues]: <https://github.com/jetmartin/bats/issues>
-[new issue]: <https://github.com/jetmartin/bats/issues/new>
-[Changelog]: <https://github.com/jetmartin/bats/blob/master/CHANGELOG.md>
+[github]: <https://github.com/bats-core/bats-vscode>
+[issues]: <https://github.com/bats-core/bats-vscode/issues>
+[new issue]: <https://github.com/bats-core/bats-vscode/issues/new>
+[Changelog]: <https://github.com/bats-core/bats-vscode/blob/master/CHANGELOG.md>
 [MIT]: <https://jet-martin.mit-license.org/2017>
-[humanstxt]: <https://github.com/jetmartin/bats/blob/master/humans.txt>
+[humanstxt]: <https://github.com/bats-core/bats-vscode/blob/master/humans.txt>
 
 [bats-core]: <https://github.com/bats-core/bats-core>
 [bats-assert]: <https://github.com/bats-core/bats-assert>
@@ -226,15 +226,15 @@ This extension was inspired by [sublime-bats].
 [vscode-shellcheck]: <https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck>
 [sublime-bats]: <https://github.com/jverdeyen/sublime-bats>
 
-[_art]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_art.png>
-[_bat]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_bat.png>
-[_construction]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_construction.png>
-[_copyright]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_copyright.png>
-[_exclamation]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_exclamation.png>
-[_flashlight]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_flashlight.png>
-[_information_source]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_information_source.png>
-[_negative_squared_cross_mark]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_negative_squared_cross_mark.png>
-[_scissors]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_scissors.png>
-[_scroll]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_scroll.png>
-[_tada]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_tada.png>
-[_white_check_mark]: <https://cdn.jsdelivr.net/gh/jetmartin/bats/images/_white_check_mark.png>
+[_art]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_art.png>
+[_bat]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_bat.png>
+[_construction]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_construction.png>
+[_copyright]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_copyright.png>
+[_exclamation]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_exclamation.png>
+[_flashlight]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_flashlight.png>
+[_information_source]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_information_source.png>
+[_negative_squared_cross_mark]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_negative_squared_cross_mark.png>
+[_scissors]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_scissors.png>
+[_scroll]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_scroll.png>
+[_tada]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_tada.png>
+[_white_check_mark]: <https://cdn.jsdelivr.net/gh/bats-core/bats-vscode/images/_white_check_mark.png>
