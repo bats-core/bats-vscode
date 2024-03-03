@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <dict>
@@ -11,18 +11,42 @@
             <dict>
                 <key>match</key>
                 <string>\$(output|status|lines|stderr|stderr_lines)\b</string>
-                <key>name</key>
-                <string>support.variable.bats</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>support.variable.bats</string>
+                    </dict>
+                </dict>
             </dict>
             <dict>
                 <key>match</key>
-                <string>\$BATS_(RUN_COMMAND|TEST_(FILENAME|DIRNAME|NAMES?|DESCRIPTION)|(SUITE_)?TEST_NUMBER|((RUN|FILE|SUITE|TEST)_)?TMPDIR|FILE_EXTENSION|VERSION)\b</string>
-                <key>name</key>
-                <string>support.variable.bats</string>
+                <string>\${#?(output|status|lines|stderr|stderr_lines)\b[^}]*}</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>support.variable.bats</string>
+                    </dict>
+                </dict>
             </dict>
             <dict>
                 <key>match</key>
-                <string>\$\{#?(output|status|lines|stderr|stderr_lines)\b</string>
+                <string>\$(BATS_(RUN_COMMAND|TEST_(FILENAME|DIRNAME|NAMES?|DESCRIPTION)|(SUITE_)?TEST_NUMBER|((RUN|FILE|SUITE|TEST)_)?TMPDIR|FILE_EXTENSION|VERSION))\b</string>
+                <key>captures</key>
+                <dict>
+                    <key>1</key>
+                    <dict>
+                        <key>name</key>
+                        <string>support.variable.bats</string>
+                    </dict>
+                </dict>
+            </dict>
+            <dict>
+                <key>match</key>
+                <string>\${#?(BATS_(RUN_COMMAND|TEST_(FILENAME|DIRNAME|NAMES?|DESCRIPTION)|(SUITE_)?TEST_NUMBER|((RUN|FILE|SUITE|TEST)_)?TMPDIR|FILE_EXTENSION|VERSION))\b[^}]*}</string>
                 <key>captures</key>
                 <dict>
                     <key>1</key>
