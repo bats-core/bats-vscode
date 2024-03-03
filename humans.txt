@@ -17,4 +17,6 @@ Contributor: Edwin Kofler (@hyperupcall)
 
 Contributor: (@NorthboundTrain)
 
+Contributor: (@KlfJoat)
+
 Inspiration: https://github.com/jverdeyen/sublime-bats

@@ -14,6 +14,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 
 - [x] ![memo][_memo] docs: add contributing documentation
+- [x] ![busts_in_silhouette][_busts_in_silhouette] Add [(KlfJoat)](https://github.com/KlfJoat) as a [contributor]
 
 ## [0.1.10] - 2023-12-03
 
