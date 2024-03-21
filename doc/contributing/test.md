@@ -1,10 +1,10 @@
 # Test your contribution
 
-## how to test the syntaxe and snipets ?
+## how to test the syntax and snippets ?
 
 Yet not automation has een provided on the current module.
 
-We recomend to install custom colorization as explained in the module [README.md](../../README.md) or bellow :
+We recommend installing custom colorization as explained in the module [README.md](../../README.md) or bellow :
 
 Add this to your VS Code settings.
 
@@ -38,18 +38,18 @@ Add this to your VS Code settings.
 }
 ```
 
-You can now go to the `test` folder and check if the module behave as expeted.
+You can now go to the `test` folder and check if the module behave as expected.
 
 > Do not forget to manage proper non-regression testing and not only testing your personal updates.
 
 ## ES lint
 
-According to the fiew JS code on that specific module, the ES lint config and tasks have not been configured yet.
+According to the few JS code on that specific module, the ES lint config and tasks have not been configured yet.
 
 ## Markdown lint
 
 There is a `.markdownlint.json` file to preconfigure Lint your docs.
 The MDlint task has not been set yet.
 
-If you use the VSCode plusgin it will be managed while you're typing.
+If you use the VSCode plugin it will be managed while you're typing.
 Otherwise, you can use the terminal to do it manually.
