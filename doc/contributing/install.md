@@ -2,7 +2,7 @@
 
 ## VScode documentation
 
-Please reffer to VSCode documentation.
+Please refer to VSCode documentation.
 
 ## Run & Debug
 
@@ -26,6 +26,6 @@ npm --version
 ## Install
 
 * Open the terminal in your VSCode.
-* Run the install comand : `npm i`
+* Run the install command : `npm i`
 
 You can now [launch your plugin](./Launch.md).
