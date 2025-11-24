@@ -19,4 +19,7 @@ Contributor: (@NorthboundTrain)
 
 Contributor: (@KlfJoat)
 
+Contributor: Vukory
+Site: https://www.artstation.com/vukory
+
 Inspiration: https://github.com/jverdeyen/sublime-bats

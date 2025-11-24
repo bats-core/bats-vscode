@@ -7,6 +7,6 @@ If you want to put your hand on anyway, see bellow.
 
 ## [Manage dependencies and install](./install.md)
 
-## [Lauch the module](./Launch.md)
+## [Launch the module](./Launch.md)
 
 ## [Test your code](./test.md)
